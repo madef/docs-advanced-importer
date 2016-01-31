@@ -23,16 +23,15 @@ This module can be used by small retailers as well as by large accounts, it is b
 
 #### Fit it to your needs
 
-* [Support your own XML format](!en/Customize/Support_Your_Own_XML_Format)
-* [Import CSV](!en/Customize/Import_CSV)
-* [Make your own importer](!en/Customize/Make_Your_Own_Importer)
+* [Support your own XML format](!en/Support_Your_Own_XML_Format)
+* [Online tools to create xslt](xslt.prestashopxmlimporter.madef.fr)
+* [Import CSV](!en/Import_CSV)
 
 </div>
 <div class="col-sm-4">
 
 #### Full Support
 
-* Half day support is included with the module
 * Refund if the module does'nt works
 * [Contact the developper](https://addons.prestashop.com/en/write-to-developper?id_product=7951)
 
