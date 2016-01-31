@@ -1,0 +1,33 @@
+{
+    "title": "PrestaShop XML & CSV Importer",
+    "tagline": "PrestaShop Importer XML & CSV Importer Documentation",
+    "author": "Madef IT",
+    "image": "app.png",
+    "ignore": {
+            "files": ["Work_In_Progress.md"],
+            "folders": ["99_Not_Ready"]
+    },
+    "live": {
+        "inherit_index": true,
+        "clean_urls": true
+    },
+    "html": {
+        "theme": "daux-blue",
+        "breadcrumbs": true,
+        "breadcrumb_separator": "Chevrons",
+        "toggle_code": false,
+        "date_modified": true,
+        "float": false,
+
+        "twitter": ["madef_"],
+        "google_analytics": "UA-41504170-1",
+        "links": {
+            "Contact": "https://addons.prestashop.com/en/write-to-developper?id_product=7951",
+            "Download": "http://addons.prestashop.com/fr/edition-rapide-de-masse/7951-advanced-xml-csv-importer.html"
+        }
+    },
+    "languages": {
+        "en": "English",
+        "fr": "Français"
+    }
+}
