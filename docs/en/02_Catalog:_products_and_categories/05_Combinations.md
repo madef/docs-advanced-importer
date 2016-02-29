@@ -123,3 +123,31 @@ In order to create the attributes and their values in the flow product, we use t
 	</product>
 </products>
 ```
+
+## Define textures to attributes
+
+PrestaShop allow to use textures (small images) instead of color for the color attributes.
+
+Here is an example of a flow with a texture:
+```
+<objects>
+	<object type="attribute" external-reference="demo-recto-color-rouge">
+		<external_reference for="id_attribute_group" type="attributeGroup">demo-recto-color</external_reference>
+		<color>#E84C3D</color>
+		<texture>http://domain.com/texture.jpg</texture> <!-- a path or an url -->
+		<name>Red</name>
+	</object>
+</objects>
+```
+
+To remove the texture, set an empty value:
+```
+<objects>
+	<object type="attribute" external-reference="demo-recto-color-rouge">
+		<external_reference for="id_attribute_group" type="attributeGroup">demo-recto-color</external_reference>
+		<color>#E84C3D</color>
+		<texture></texture>
+		<name>Red</name>
+	</object>
+</objects>
+```
