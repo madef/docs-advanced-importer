@@ -78,23 +78,23 @@ In order to create the attributes and their values in the flow product, we use t
 		</images>
 		<block>
 			<objects>
-				<object type="attributeGroup" external-reference="demo-recto-color">
+				<object type="attributeGroup" external-reference="demo-recto-color" update="0">
 					<is_color_group>1</is_color_group>
 					<group_type>color</group_type>
 					<name>Color of the front</name>
 					<public_name>Color of the front</public_name>
 				</object>
-				<object type="attribute" external-reference="demo-recto-color-gray">
+				<object type="attribute" external-reference="demo-recto-color-gray" update="0">
 					<external_reference for="id_attribute_group" type="attributeGroup">demo-recto-color</external_reference>
 					<color>#AAB2BD</color>
 					<name>Gray</name>
 				</object>
-				<object type="attribute" external-reference="demo-recto-color-blue">
+				<object type="attribute" external-reference="demo-recto-color-blue" update="0">
 					<external_reference for="id_attribute_group" type="attributeGroup">demo-recto-color</external_reference>
 					<color>#5D9CEC</color>
 					<name>Blue</name>
 				</object>
-				<object type="attribute" external-reference="demo-recto-color-red">
+				<object type="attribute" external-reference="demo-recto-color-red" update="0">
 					<external_reference for="id_attribute_group" type="attributeGroup">demo-recto-color</external_reference>
 					<color>#E84C3D</color>
 					<name>Red</name>
