@@ -1,4 +1,4 @@
-##Manufaturer
+## Manufaturer
 
 Here is an example of importing a product with a manufacturer:
 
@@ -26,7 +26,7 @@ Here is an example of importing a product with a manufacturer:
 </products>
 ```
 
-##Supplier
+## Supplier
 
 Here is an example of importing a product with a supplier:
 
