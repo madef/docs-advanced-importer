@@ -79,7 +79,7 @@ The product is now imported.
 
 ## 4. Understand how the module works
 
-To import a flow the module do multiple actions in order to download, translate in its own language, explode the flow into atomic actions, and finally create the objects (products, stock movements, ...).
+The module do multiple actions in order to download, translate in its own language, explode the flow into atomic actions, and finally create the objects (products, stock movements, ...).
 This schema explain how these actions succeeded each other :
 
 ![image alt text](ai-shema-en.png)
