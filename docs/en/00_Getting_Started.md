@@ -84,4 +84,4 @@ This schema explain how these actions succeeded each other :
 
 ![image alt text](ai-shema-en.png)
 
-In the previous example we downloaded the flow manually. The module did not transform the flow as it was already in the native format. After that the blocks was executed and the product was created.
+In the previous example we downloaded the flow manually. The module did not transform the flow as it was already in the native format. After that the flow was exploded in block. The block was executed and the product was created.
