@@ -35,7 +35,7 @@ To activate the module go to "Configuration" in the menu. Fill in the field “O
 
 ![image alt text](image_3.png)
 
-## 4. Import a basic flow
+## 3. Import a basic flow
 
 We will use the following flow:
 
@@ -77,7 +77,7 @@ Otherwise, it will be necessary to execute it manually. To do so, choose (in the
 
 The product is now imported.
 
-## 3. Understand how the module works
+## 4. Understand how the module works
 
 To import a flow the module do multiple actions in order to download, translate in its own language, explode the flow into atomic actions, and finally create the objects (products, stock movements, ...).
 This schema explain how these actions succeeded each other :
