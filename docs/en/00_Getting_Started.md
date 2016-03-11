@@ -21,6 +21,10 @@ In the menu, a new entry will appear:
 
 The module is now installed. We just need to activate it now.
 
+## 2. Activate the Smart Cron
+
+The smart cron simulate an unix cron.
+
 **The activation can only be done from your processing environment.**
 
 If you have a preprocessing  environment, you can access from an external environment, contact us with the PrestaShop Addons form.
@@ -31,7 +35,7 @@ To activate the module go to "Configuration" in the menu. Fill in the field “O
 
 ![image alt text](image_3.png)
 
-## 2. Import a flow
+## 4. Import a basic flow
 
 We will use the following flow:
 
@@ -72,3 +76,12 @@ Otherwise, it will be necessary to execute it manually. To do so, choose (in the
 ![image alt text](image_7.png)
 
 The product is now imported.
+
+## 3. Understand how the module works
+
+To import a flow the module do multiple actions in order to download, translate in its own language, explode the flow into atomic actions, and finally create the objects (products, stock movements, ...).
+This schema explain how these actions succeeded each other :
+
+![image alt text](ai-shema-en.png)
+
+In the previous example we downloaded the flow manually. The module did not transform the flow as it was already in the native format. After that the blocks was executed and the product was created.
