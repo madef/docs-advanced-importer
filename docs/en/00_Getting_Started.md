@@ -23,7 +23,7 @@ The module is now installed. We just need to activate it now.
 
 ## 2. Activate the Smart Cron
 
-The smart cron simulate an unix cron.
+The smart cron simulate an unix cron. It allows to execute tasks each minutes.
 
 **The activation can only be done from your processing environment.**
 
