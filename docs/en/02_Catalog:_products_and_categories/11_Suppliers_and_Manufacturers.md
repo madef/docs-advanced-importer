@@ -47,6 +47,8 @@ Here is an example of importing a product with a supplier:
 					<external_reference for="id_product" type="Product">product-1</external_reference>
 					<id_product_attribute>0</id_product_attribute>
 					<external_reference for="id_supplier" type="Supplier">supplier-1</external_reference>
+					<product_supplier_price_te>13</product_supplier_price_te>
+					<product_supplier_reference>Reference</product_supplier_reference>
 				</object>
 			</objects>
 		</block>
