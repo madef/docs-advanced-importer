@@ -4,8 +4,8 @@ Let’s take for instance the following flow:
 
 ```
 Reference Externe,Reference,Nom,Description,Categorie parente,Sous catégorie,Prix,Stock,Ean13,Image
-ref-1,ref-1,"Product 1","Description 1","Music player","Ipod",150, 12,8412457989784,[http](http://prestashopxmlimporter.madef.fr/img/demo.jpg)[://prestashopxmlimporter.madef.fr/img/demo.jpg](http://prestashopxmlimporter.madef.fr/img/demo.jpg)
-ref-2,ref-2,"Product 2","Description 2","Music player","Accessories",20, 5,8412457989785,[http](http://prestashopxmlimporter.madef.fr/img/demo.jpg)[://prestashopxmlimporter.madef.fr/img/demo.jpg](http://prestashopxmlimporter.madef.fr/img/demo.jpg)
+ref-1,ref-1,"Product 1","Description 1","Music player","Ipod",150, 12,8412457989784,http://prestashopxmlimporter.madef.fr/img/demo.jpg
+ref-2,ref-2,"Product 2","Description 2","Music player","Accessories",20, 5,8412457989785,http://prestashopxmlimporter.madef.fr/img/demo.jpg
 ```
 
 
