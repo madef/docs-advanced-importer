@@ -107,7 +107,10 @@ Be careful, the parameters cannot be surrounded by spaces. This example will not
 
 ## Create your own
 
-In some cases the modifiers cannot fit your needs. In this case you will have to make your own helper class. This helper class must be created in the directory modules/advancedimporter/classes/helper.
-Do not modify existing helpers because your modification will be erased when the module will be upgraded.
+In some cases the modifiers cannot fit your needs. In this case you will have to make your own helper class.
+
+This helper class must be created in the directory modules/advancedimporter/classes/helper.
+
+Do not modify existing helpers because your modifications will be erased when the module will be upgraded.
 
 The helper class are PHP class with statics methods that follow the name convention: "Helper_<YourHelperNameInCamelCase>". The file name must be in lower case : <yourhelpernameinlowercase>.php.
