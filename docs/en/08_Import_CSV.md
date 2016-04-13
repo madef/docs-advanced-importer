@@ -44,7 +44,7 @@ Here is a sample template:
 
 In order to import combination, you can use one line per combination.
 
-Be careful, each line must includ the data of the product.
+Be careful, each line must include the data of the product.
 
 Here is an example of a CSV with multiple combination:
 ```
@@ -57,7 +57,7 @@ Here is an example of a CSV with multiple combination:
 "demo-2","demo-2-3","Product 2","green",43,"9.99",40,"Women > T-shirt","Outlet  > T-shirt","http://prestashopxmlimporter.madef.fr/app.png","http://prestashopxmlimporter.madef.fr/en/image_0.png"
 ```
 
-The template to convert the CSV in XML must look like this:
+The template to convert the CSV in XML will looks like this:
 
 ```
 <product external-reference="{{0}}">
