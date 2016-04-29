@@ -27,7 +27,11 @@ It's possible to download image for categories:
 
 ## Replace old images
 
-The module don't delete the images of a product at each importation. Each images is replaced by a new one with the same url. In other cases a new image will be created. To replace all existing images you have to use the attribute "insertion" with the value "replace":
+The module don't delete the images of a product at each importation.
+
+Each images is replaced by a new one with the same url. In other cases a new image will be created.
+
+To replace all existing images you have to use the attribute "insertion" with the value "replace":
 ```
 <products>
 	<product external-reference="product-demo-1" >
