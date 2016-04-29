@@ -26,6 +26,7 @@ It's possible to download image for categories:
 ```
 
 ## Replace old images
+
 The module don't delete the images of a product at each importation. Each images is replaced by a new one with the same url. In other cases a new image will be created. To replace all existing images you have to use the attribute "insertion" with the value "replace":
 ```
 <products>
@@ -89,7 +90,7 @@ By default the module define the first image as the cover. It's possible to defi
 
 ## Define external reference
 
-Like any other object, image can be referenced with an external reference:
+Like any other objects, images can be referenced with an external reference:
 ```
 <products>
 	<product external-reference="product-demo-1" >
@@ -104,6 +105,7 @@ Like any other object, image can be referenced with an external reference:
 ```
 
 ## Optimize upload
+
 Download images can be slow. The images are downloaded even if they already exist. If you do not need this behavior, you must add the attribute "update":
 
 ```
@@ -119,7 +121,7 @@ Download images can be slow. The images are downloaded even if they already exis
 </products>
 ```
 
-You can also set the "update" attribute to a specific image:
+You can also add the "update" attribute to a specific image:
 
 ```
 <products>
