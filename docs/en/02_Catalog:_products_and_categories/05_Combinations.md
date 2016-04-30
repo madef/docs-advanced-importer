@@ -98,27 +98,25 @@ In order to create the attributes and their values in the flow product, we use t
 					<external_reference for="id_attribute_group" type="attributeGroup">demo-recto-color</external_reference>
 					<color>#E84C3D</color>
 					<name>Red</name>
-					<block>
-						<products>
-							<product>
-								<id>{{id}}</id>
-								<combinations external-reference="combination-1">
-									<price>10.5</price>
-									<unit_price_impact>0</unit_price_impact>
-									<images>1</images>
-									<attributes use-external-reference="1">demo-recto-color-blue</attributes>
-								</combinations>
-								<combinations external-reference="combination-2">
-									<price>11.5</price>
-									<unit_price_impact>0</unit_price_impact>
-									<images>1</images>
-									<attributes use-external-reference="1">demo-recto-color-red</attributes>
-								</combinations>
-							</product>
-						</products>
-					</block>
 				</object>
 			</objects>
+			<products>
+				<product>
+					<id>{{id}}</id>
+					<combinations external-reference="combination-1">
+						<price>10.5</price>
+						<unit_price_impact>0</unit_price_impact>
+						<images>1</images>
+						<attributes use-external-reference="1">demo-recto-color-blue</attributes>
+					</combinations>
+					<combinations external-reference="combination-2">
+						<price>11.5</price>
+						<unit_price_impact>0</unit_price_impact>
+						<images>1</images>
+						<attributes use-external-reference="1">demo-recto-color-red</attributes>
+					</combinations>
+				</product>
+			</products>
 		</block>
 	</product>
 </products>
