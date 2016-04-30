@@ -45,18 +45,20 @@ Creation or modification of two variants:
 		<description>Product description</description>
 		<price>19.99</price>
 		<images>
-			<url>/modules/advancedimporter/img/media/01.jpg</url> <!-- from local storage -->
+			<url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
 		</images>
 		<combinations external-reference="combination-1">
 			<price>10.5</price>
 			<unit_price_impact>0</unit_price_impact>
-			<images>1</images>
+			<images>
+			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
+			</images>
 			<attributes use-external-reference="1">demo-recto-color-blue</attributes>
 		</combinations>
 		<combinations external-reference="combination-2">
 			<price>11.5</price>
 			<unit_price_impact>0</unit_price_impact>
-			<images>1</images>
+			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-2.jpg</url>
 			<attributes use-external-reference="1">demo-recto-color-red</attributes>
 		</combinations>
 	</product>
@@ -74,7 +76,7 @@ In order to create the attributes and their values in the flow product, we use t
 		<description>Product description</description>
 		<price>19.99</price>
 		<images>
-			<url>/modules/advancedimporter/img/media/01.jpg</url> <!-- from local storage -->
+		    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
 		</images>
 		<block>
 			<objects>
@@ -106,18 +108,53 @@ In order to create the attributes and their values in the flow product, we use t
 					<combinations external-reference="combination-1">
 						<price>10.5</price>
 						<unit_price_impact>0</unit_price_impact>
-						<images>1</images>
+						<images>
+							<url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
+						</images>
 						<attributes use-external-reference="1">demo-recto-color-blue</attributes>
 					</combinations>
 					<combinations external-reference="combination-2">
 						<price>11.5</price>
 						<unit_price_impact>0</unit_price_impact>
-						<images>1</images>
+						<images>
+			                <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-2.jpg</url>
+						</images>
 						<attributes use-external-reference="1">demo-recto-color-red</attributes>
 					</combinations>
 				</product>
 			</products>
 		</block>
+	</product>
+</products>
+```
+
+## Don't remove combination not specified
+
+By defaut the combination of the product not specified will be removed. You can avoid that by adding the attribute "autodelete-combinations" with the value "0":
+
+```
+<products>
+	<product autodelete-combinations="0" external-reference="product-demo-1" >
+		<name>Name</name>
+		<description>Product description</description>
+		<price>19.99</price>
+		<images>
+			<url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
+		</images>
+		<combinations external-reference="combination-1">
+			<price>10.5</price>
+			<unit_price_impact>0</unit_price_impact>
+			<images>
+			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
+			</images>
+			<attributes use-external-reference="1">demo-recto-color-blue</attributes>
+		</combinations>
+		<combinations external-reference="combination-2">
+			<price>11.5</price>
+			<unit_price_impact>0</unit_price_impact>
+			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-2.jpg</url>
+			<attributes use-external-reference="1">demo-recto-color-red</attributes>
+		</combinations>
 	</product>
 </products>
 ```
