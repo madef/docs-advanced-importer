@@ -186,3 +186,33 @@ To remove the texture, set an empty value:
 	</object>
 </objects>
 ```
+
+## Define a combination as default combination:
+```
+<products>
+	<product autodelete-combinations="0" external-reference="product-demo-1" >
+		<name>Name</name>
+		<description>Product description</description>
+		<price>19.99</price>
+		<images>
+			<url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
+		</images>
+		<combinations external-reference="combination-1">
+			<price>10.5</price>
+			<unit_price_impact>0</unit_price_impact>
+			<images>
+			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
+			</images>
+			<attributes use-external-reference="1">demo-recto-color-blue</attributes>
+		</combinations>
+		<combinations external-reference="combination-2">
+		    <default_on>0</default_on>
+			<price>11.5</price>
+			<unit_price_impact>0</unit_price_impact>
+			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-2.jpg</url>
+			<attributes use-external-reference="1">demo-recto-color-red</attributes>
+		</combinations>
+	</product>
+</products>
+```
+
