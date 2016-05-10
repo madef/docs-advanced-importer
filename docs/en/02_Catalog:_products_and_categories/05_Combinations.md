@@ -206,7 +206,7 @@ To remove the texture, set an empty value:
 			<attributes use-external-reference="1">demo-recto-color-blue</attributes>
 		</combinations>
 		<combinations external-reference="combination-2">
-		    <default_on>0</default_on>
+			<default_on>1</default_on>
 			<price>11.5</price>
 			<unit_price_impact>0</unit_price_impact>
 			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-2.jpg</url>
