@@ -2,7 +2,7 @@ By default the module only support XML files of the format defined in this docum
 
 If you get your XML flows from a supplier or if you want to use CSV flows, you have to make a "**template**".
 
-A **template** translate CSV or XML flows into the format supported by PrestaShop XML & CSV Importer.
+A **template** translates CSV or XML flows into the format supported by PrestaShop XML & CSV Importer.
 
 ## Create a template
 
