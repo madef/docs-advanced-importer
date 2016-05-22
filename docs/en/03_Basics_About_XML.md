@@ -8,7 +8,7 @@ The module integrates by default, six types of flow XML :
 
 If you have knowledge on PHP, it is possible to add others thanks to the creation of new importers.
 
-The module can import almost any flow format without coding even one line. To do this, it is necessary to create a [XSLT](Customize/Support_Your_Own_XML_Format) format. 
+The module can import almost any flow format without coding even one line. To do this, it is necessary to create a [Template (XSLT)](Create_Templates) format. 
 
 ## Flow product
 
