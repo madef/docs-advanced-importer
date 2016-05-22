@@ -23,8 +23,8 @@ This module can be used by small retailers as well as by large accounts, it is b
 
 #### Fit it to your needs
 
-* [Support your own XML format](!en/Customize_Flows/Support_Your_Own_XML_Format)
-* [Online tools to create xslt](http://xslt.prestashopxmlimporter.madef.fr)
+* Import XML or CSV from multiple suppliers
+* Import large files
 * [Import CSV](!en/Import_CSV)
 
 </div>
