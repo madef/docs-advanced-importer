@@ -23,9 +23,8 @@ This module can be used by small retailers as well as by large accounts, it is b
 
 #### Fit it to your needs
 
-* Import XML or CSV from multiple suppliers
+* [Import XML or CSV from multiple suppliers](!en/Create_Templates)
 * Import large files
-* [Import CSV](!en/Import_CSV)
 
 </div>
 <div class="col-sm-4">
