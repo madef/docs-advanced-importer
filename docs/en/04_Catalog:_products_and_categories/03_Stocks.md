@@ -57,7 +57,7 @@ If you use avanced stock the previous example will not works. To de fine the sto
 <objects>
 	<object type="stock" external-reference="stock-1">
 		<id_warehouse>1</id_warehouse>
-		<product use-external-reference="1">product-demo-1</product>
+		<external_reference for="id_product" type="product">product-demo-1</external_reference>
 		<id_product_attribute>0</id_product_attribute>
 		<physical_quantity>10</physical_quantity>
 		<usable_quantity>10</usable_quantity>
@@ -65,7 +65,7 @@ If you use avanced stock the previous example will not works. To de fine the sto
 	</object>
 	<object update="0" type="WarehouseProductLocation" external-reference="warehouse-1_product-demo-1">
 		<id_warehouse>1</id_warehouse>
-		<product use-external-reference="1">product-demo-1</product>
+		<external_reference for="id_product" type="product">product-demo-1</external_reference>
 		<id_product_attribute>0</id_product_attribute>
 		<location>Area 5</location>
 	</object>
