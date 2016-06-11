@@ -12,7 +12,7 @@ Creation of attributes and values of attributes:
 <objects>
 	<object type="attributeGroup" external-reference="demo-recto-color">
 		<is_color_group>1</is_color_group>
-		<group_type>color</group_type>
+		<group_type>color</group_type> <!-- Used for the layered navigation: select, radio or color -->
 		<name>Color of the front</name>
 		<public_name>Color of the front</public_name>
 	</object>
