@@ -54,20 +54,17 @@ It is possible to modify the stocks directly from the flow product by using the 
 If you use avanced stock the previous example will not works. To de fine the stock you have to use a flow object:
 
 ```
-<objects>
-	<object type="stock" external-reference="stock-1">
-		<id_warehouse>1</id_warehouse>
-		<external_reference for="id_product" type="product">product-demo-1</external_reference>
-		<id_product_attribute>0</id_product_attribute>
-		<physical_quantity>10</physical_quantity>
-		<usable_quantity>10</usable_quantity>
-		<price_te>0</price_te>
-	</object>
-	<object update="0" type="WarehouseProductLocation" external-reference="warehouse-1_product-demo-1">
-		<id_warehouse>1</id_warehouse>
-		<external_reference for="id_product" type="product">product-demo-1</external_reference>
-		<id_product_attribute>0</id_product_attribute>
-		<location>Area 5</location>
-	</object>
-</objects>
+<stocks>
+    <stock>
+        <reference>test01</reference>
+        <warehouse>1</warehouse> <!-- required -->
+        <price>10</price> <!-- required -->
+        <quantity>10</quantity> <!-- required -->
+        <usable>1</usable> <!-- optional, default value: 1 -->
+        <location>Area 5</location> <!-- optional, default value: null -->
+        <employee>1</empoyee> <!-- optional, default value: 1 -->
+        <currency>1</currency> <!-- optional, default value: null -->
+        <reason>1</reason> <!-- optional, default value: 1 -->
+    </stock>
+</stocks>
 ```
