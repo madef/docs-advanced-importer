@@ -86,7 +86,7 @@ For exemple you want to replace the words "love" by "♥" you will proceed like 
 <products>
     <product external-reference="demo-1">
         <name>Name</name>
-        <description modifier="Helper_String(love,♥)">Product description</description>
+        <description modifier="Helper_String::replace(love,♥)">Product description</description>
         <price>50</price>
     </product>
 </products>
@@ -99,7 +99,7 @@ Be careful, the parameters cannot be surrounded by spaces. This example will not
 <products>
     <product external-reference="demo-1">
         <name>Name</name>
-        <description modifier="Helper_String(love ,♥)">Product description</description>
+        <description modifier="Helper_String::replace(love ,♥)">Product description</description>
         <price>50</price>
     </product>
 </products>
