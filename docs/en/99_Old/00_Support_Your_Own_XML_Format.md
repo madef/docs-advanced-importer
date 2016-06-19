@@ -2,7 +2,9 @@ The XSLT enables a conversion of any document of any format to a different forma
 
 ## Creation via the online tool
 
-To faciliate the spelling of the XSLT, a free online tool exists: [http://xslt.prestashopxmlimporter.madef.fr](http://xslt.prestashopxmlimporter.madef.fr)
+To faciliate the spelling of the XSLT, a free online tool exists (deprecated): [http://xslt.prestashopxmlimporter.madef.fr](http://xslt.prestashopxmlimporter.madef.fr)
+
+To help you to edit your XSLT, a free online tool exists and display the render of the XML on live: http://xslt.prestashopxmlimporter.madef.fr/live.php
 
 This tool enables the creation of the XSLT for the flow product without any particular knowledge. Therefore, it is necessary to have a minimum knowledge on the XML format and on the features of the PrestaShop products.
 
