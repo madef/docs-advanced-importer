@@ -15,7 +15,7 @@ To increase the price of 20% you will proceed like this:
     <product external-reference="demo-1">
         <name>Name</name>
         <description>Product description</description>
-        <price modifier="Helper_Number::addPercentage(20)">50</price>
+        <price modifier="HelperNumber::addPercentage(20)">50</price>
     </product>
 </products>
 ```
@@ -28,7 +28,7 @@ You may also want to increase the price of 2$:
     <product external-reference="demo-1">
         <name>Name</name>
         <description>Product description</description>
-        <price modifier="Helper_Number::add(2)">50</price>
+        <price modifier="HelperNumber::add(2)">50</price>
     </product>
 </products>
 ```
@@ -43,7 +43,7 @@ The modifier allow to make more complex arithmetic operations:
     <product external-reference="demo-1">
         <name>Name</name>
         <description>Product description</description>
-        <price modifier="Helper_Number::calculate">2 * (50 + 5)</price>
+        <price modifier="HelperNumber::calculate">2 * (50 + 5)</price>
     </product>
 </products>
 ```
@@ -86,7 +86,7 @@ For exemple you want to replace the words "love" by "♥" you will proceed like 
 <products>
     <product external-reference="demo-1">
         <name>Name</name>
-        <description modifier="Helper_String::replace(love,♥)">Product description</description>
+        <description modifier="HelperString::replace(love,♥)">Product description</description>
         <price>50</price>
     </product>
 </products>
@@ -99,7 +99,7 @@ Be careful, the parameters cannot be surrounded by spaces. This example will not
 <products>
     <product external-reference="demo-1">
         <name>Name</name>
-        <description modifier="Helper_String::replace(love ,♥)">Product description</description>
+        <description modifier="HelperString::replace(love ,♥)">Product description</description>
         <price>50</price>
     </product>
 </products>
@@ -113,4 +113,4 @@ This helper class must be created in the directory modules/advancedimporter/clas
 
 Do not modify existing helpers because your modifications will be erased when the module will be upgraded.
 
-The helper class are PHP class with statics methods that follow the name convention: "Helper_<YourHelperNameInCamelCase>". The file name must be in lower case : <yourhelpernameinlowercase>.php.
+The helper class are PHP class with statics methods that follow the name convention: "Helper<YourHelperNameInCamelCase>". The file name must be in lower case : <yourhelpernameinlowercase>.php.
