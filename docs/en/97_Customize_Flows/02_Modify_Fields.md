@@ -113,4 +113,4 @@ This helper class must be created in the directory modules/advancedimporter/clas
 
 Do not modify existing helpers because your modifications will be erased when the module will be upgraded.
 
-The helper class are PHP class with statics methods that follow the name convention: "Helper<YourHelperNameInCamelCase>". The file name must be in lower case : &lt;yourhelpernameinlowercase&gt;.php.
+The helper class are PHP class with statics methods that follow the name convention: "Helper&lt;YourHelperNameInCamelCase&gt;". The file name must be in lower case : &lt;yourhelpernameinlowercase&gt;.php.
