@@ -83,4 +83,4 @@ Ce schéma explique comment les actions se succèdent :
 
 ![image alt text](ai-shema-fr.png)
 
-Dans le précédent exemple, le flux a été téléchargé manuellement. Le module n'a pas eu besoin de le traduire car il était dnas le langage natif. Après quoi, le flux a été "séparé" en un bloc. Le bloc a été exécuté et le produit a été créé.
+Dans le précédent exemple, le flux a été téléchargé manuellement. Le module n'a pas eu besoin de le traduire car il était dans le langage natif. Après quoi, le flux a été "séparé" en un bloc. Le bloc a été exécuté et le produit a été créé.
