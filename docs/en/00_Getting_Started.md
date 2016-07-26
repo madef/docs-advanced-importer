@@ -61,7 +61,7 @@ If you have not activated the module (in case you have done tests on a local mac
 
 To do this, type the url here under in your web browser: [http://localhost/prestashop/modules/advancedimporter/cron.php?debug](http://localhost/prestashop/modules/advancedimporter/cron.php?debug)
 
-"localhost" and “prestashop” of the url are to be adapted to your configuration. [http://localhost/prestashop/](http://localhost/prestashop/) is the url of your shop’s home page. 
+"localhost" and “prestashop” of the url have to be adapted to your configuration. [http://localhost/prestashop/](http://localhost/prestashop/) is the url of your shop’s home page. 
 
 The flow now figures in the list under the tab PrestaShop XML Importer > Flow.
 
