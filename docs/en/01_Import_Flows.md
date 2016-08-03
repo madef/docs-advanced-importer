@@ -62,6 +62,7 @@ In the form, fill in the following fields:
 * Description : Test importer
 * Cron Time : 0 1 * * *
 * Url : http://prestashopxmlimporter.madef.fr/example/product01.xml
+* Filename : filename_%date%.xml or filename_%date%.csv
 * Station : 1
 * Id shop : 1
 
