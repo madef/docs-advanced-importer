@@ -3768,6 +3768,7 @@
     * validator: none
     * required: false
     * size: undefined
+    * values : both, catalog, search, none
  * cache_default_attribute:
     * lang: false
     * shop: true
