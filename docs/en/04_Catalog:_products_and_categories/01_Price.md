@@ -43,7 +43,7 @@ The specific prices can be created by using the flow object:
 		<reduction_type>percentage</reduction_type> <!-- or amount -->
 		<from_quantity>1</from_quantity>
 		<id_customer>0</id_customer>
-		<id_shop>1</id_shop>
+		<id_shop>0</id_shop>
 		<id_country>0</id_country>
 		<id_currency>0</id_currency>
 		<from>0000-00-00</from>
@@ -70,7 +70,7 @@ Example of a flow product with a 20% discount:
 					<reduction_type>percentage</reduction_type> <!-- or amount -->
 					<from_quantity>1</from_quantity>
 					<id_customer>0</id_customer>
-					<id_shop>1</id_shop>
+					<id_shop>0</id_shop>
 					<id_country>0</id_country>
 					<id_currency>0</id_currency>
 					<from>0000-00-00</from>
@@ -99,7 +99,7 @@ Example of a flow product with a $20 :
 					<reduction_type>amount</reduction_type> <!-- or percentage -->
 					<from_quantity>1</from_quantity>
 					<id_customer>0</id_customer>
-					<id_shop>1</id_shop>
+					<id_shop>0</id_shop>
 					<id_country>0</id_country>
 					<id_currency>0</id_currency>
 					<from>0000-00-00</from>
