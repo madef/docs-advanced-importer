@@ -7,12 +7,12 @@ Comme le nom du module le suggère il est possible d'importer des XML, des CSV m
 
 Pour ce qui est de fichier de tableur (Excel, Libre Office, ...), il doivent être préalable convertit en CSV.
 
-== Principe de base ==
+## Principe de base
 
 Entre l'importation du flux et l'import effectif de ce dernier il y a de nombreuses étapes.
 Voici un schéma résumant la vie d'une flux. Ce schéma peut sembler complexe mais avec quelques explications il est plus facile de le comprendre
 
-![La vie d'un flux](diagram.sqv)
+![La vie d'un flux](diagram.svg)
 
 On note que le flux (flow) est premièrement importer au moyen d'un modèle (template). Ce modèle permet de convertir le fux dans en langage comprehensible pour le module. Après cela, au moyen du template, le flux est découpé en blocs (blocks). Chaque bloc correspond à une entité (un produit par exemple). Ensuite, les blocs sont exécuté un à un afin des créer les entités (object).
 
