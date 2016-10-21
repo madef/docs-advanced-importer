@@ -50,8 +50,11 @@ Cela est particulièrement vrai, si vous avez besoin de faire appel à une API e
 La création d'un extracter consiste en la création d'une classe PHP. Attention, il faut respecter les convention de nommage.
 
 La classe doit se nommer AI<votre exporter avec la première lettre en majuscule>Extractor. Exemple : AiCustomExtractor
+
 Le fichier doit être placé dans le dossier modules/advancedimporter/classes/extractor
+
 Le nom du fichier doit être le nom de votre exporteur en minuscule. Exemple : custom.php
+
 La classe doit implémenter AIExtractorInterface et les méthodes **getName** et **extract** doivent être définies.
 
 Voici un exemple d'extracteur qui augmente le prix de 20% :
