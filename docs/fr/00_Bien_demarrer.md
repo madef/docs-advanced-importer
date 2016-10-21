@@ -20,11 +20,11 @@ Chaque action peut ajouter des informations dans les logs afin de suivre les ét
 
 Le traitement des flux n'est pas un traietement monotâche. Afin de supporter des flux important le flux est traité en plusieur fois. Ainsi, on limite les risques de dépassement mémoire, ou de limite de temps d'exécution.
 
-== Organisation de la documentation ==
+## Organisation de la documentation
 
 Dans l'intégralité de cette documentation, il sera concidéré que vous avez créé un modèle permettant de traiter votre flux dans le format du fournisseur. Seul l'article [Importer un flux](importer un flux) détaille l'import de flux au format fournisseur. L'ensemble des exemples de flux seront donc ceux supportés par le module est ne nécéssitant par de modèle.
 
-== Fonctionnalités ==
+## Fonctionnalités
 
 Le module permet :
 - de créer des produits dans spécifiquement une ou plusieurs boutiques
