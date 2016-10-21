@@ -23,7 +23,7 @@ This module can be used by small retailers as well as by large accounts, it is b
 
 #### Fit it to your needs
 
-* [Import XML or CSV from multiple suppliers](!en/Create_Templates)
+* Import XML or CSV from multiple suppliers
 * Import large files
 
 </div>
