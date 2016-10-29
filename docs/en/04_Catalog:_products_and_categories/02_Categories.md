@@ -148,7 +148,8 @@ The use of blocks to associate a product to a category:
 
 By default, categories are attached to the defaut group of PrestaShop. To add more group you need to insert an object CategoryGroup:
 
-```<?xml version="1.0"?>
+```
+<?xml version="1.0"?>
 <objects>
   <object type="CategoryGroup">
 	<id_category>191</id_category>
