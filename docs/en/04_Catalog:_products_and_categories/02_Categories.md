@@ -173,7 +173,8 @@ To detach group, you have to use the flow delete:
 
 ## Attach category to a shop
 
-```<?xml version="1.0"?>
+```
+<?xml version="1.0"?>
 <objects>
   <object type="CategoryShop">
 	<id_category>191</id_category>
