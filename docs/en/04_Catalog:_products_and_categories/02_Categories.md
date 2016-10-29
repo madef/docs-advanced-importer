@@ -166,7 +166,10 @@ To detach group, you have to use the flow delete:
 
 ```
 <delete>
-    <object type="CategoryGroup" id="191-2" />
+    <object type="CategoryGroup"/>
+      <id_category>191</id_category>
+      <id_group>4</id_group>
+    </object>
 </delete>
 ```
 
