@@ -144,3 +144,44 @@ The use of blocks to associate a product to a category:
 </products>
 ```
 
+## Add a group to a category
+
+By default, categories are attached to the defaut group of PrestaShop. To add more group you need to insert an object CategoryGroup:
+
+```<?xml version="1.0"?>
+<objects>
+  <object type="CategoryGroup">
+	<id_category>191</id_category>
+	<id_group>4</id_group>
+  </object>
+  <object type="CategoryGroup">
+	<id_category>191</id_category>
+	<id_group>4</id_group>
+  </object>
+</objects>
+```
+
+To detach group, you have to use the flow delete:
+
+```
+<delete>
+    <object type="CategoryGroup" id="191-2" />
+</delete>
+```
+
+
+## Attach category to a shop
+
+```<?xml version="1.0"?>
+<objects>
+  <object type="CategoryShop">
+	<id_category>191</id_category>
+	<id_shop>1</id_shop>
+  </object>
+  <object type="CategoryShop">
+	<id_category>191</id_category>
+	<id_shop>2</id_shop>
+	<position>78</position>
+  </object>
+</objects>
+```
