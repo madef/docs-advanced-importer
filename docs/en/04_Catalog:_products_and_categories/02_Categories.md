@@ -157,12 +157,12 @@ By default, categories are attached to the defaut group of PrestaShop. To add mo
   </object>
   <object type="CategoryGroup">
 	<id_category>191</id_category>
-	<id_group>4</id_group>
+	<id_group>5</id_group>
   </object>
 </objects>
 ```
 
-To detach group, you have to use the flow delete:
+To detach groups, you have to use the flow delete:
 
 ```
 <delete>
