@@ -98,3 +98,27 @@ Le résultat sera le suivant :
   </product>
 </products>
 ```
+
+Le résultat sera le suivant :
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <product external-reference="demo-1">
+    <reference>demo-1</reference>
+    <name>Name</name>
+    <price>13</price>
+    <combination external-reference="demo-1">
+      <color>red</color>
+    </combination>
+    <combination external-reference="demo-2">
+      <color>blue</color>
+    </combination>
+    <combination external-reference="demo-3">
+      <color>yellow</color>
+    </combination>
+  </product>
+</products>
+```
+
+
