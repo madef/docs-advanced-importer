@@ -32,7 +32,8 @@ If your flow has one entry of product per language like this:
 
 It's possible to group the entries of the same "reference" using XSLT:
 
-```<?xml version="1.0" encoding="utf-8"?>
+```
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE xsl:stylesheet [
 <!ENTITY nbsp " ">
 <!ENTITY copy "©">
