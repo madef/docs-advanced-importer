@@ -12,6 +12,15 @@ La première étape est donc généralement de créer un modèle. Si votre flux 
 
 Le modèle permet de convertir XML ou CSV en XML compréhensible par le module.
 
+S'il s'agit d'un flux produit alors il est possible d'utiliser l'assistant de création de modèle. Ce dernier permet de réaliser sans connaissance en XML et XSLT au moyen d'une interface des modèles.
+
+### Créer un modèle avec l'assistant
+
+### Créer un modèle
+
+### Créer une classe PHP de modèle
+
+Si votre flux doit faire appel à une API externe, si le format du flux est une format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module, alors l'écriture du d'une classe PHP sera nécessaire. Vous trouverez plus d'information dans [la pages dédiée aux extracteurs](!fr/Avancé/Extracteurs).
 
 
 
