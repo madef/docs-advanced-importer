@@ -1,15 +1,23 @@
 PrestaShop XML & CSV Importer est un module d'import dimentionné pour les flux de taille importante.
-Il est capable de gérer des flux de plusieur centaines de Mo sans problème.
+Il est capable de gérer des flux de plusieurs centaines de Mo.
 
-Le module peut importer n'importe quelle entité de PrestaShop (toutes classes PHP héritant de ObjectModel).
+Le module sait importer toutes les entités de PrestaShop (classes PHP héritant de ObjectModel).
 
-Comme le nom du module le suggère il est possible d'importer des XML, des CSV mais aussi de fichiers plats type mqseries (en cour de développement).
+Comme le nom du module le suggère il est possible d'importer des XML, des CSV, mais aussi de fichiers plats type mqseries (en cour de développement).
 
-Pour ce qui est de fichier de tableur (Excel, Libre Office, ...), il doivent être préalable convertit en CSV.
+Pour ce qui est des fichiers de tableurs (Excel, Libre Office, ...), il doivent être préalablement convertit en CSV.
 
 ## Principe de base
 
 Entre l'importation du flux et l'import effectif de ce dernier il y a de nombreuses étapes.
+
+On distingue plusieurs grandes étapes :
+- Téléchargement du fichier de flux
+- Conversion du fichier de flux dans le format compréhensible par le module
+- Lecture du flux et enregistrement en multiple « blocs »
+- Conversion des blocs en entités PrestaShop
+
+
 Voici un schéma résumant la vie d'une flux. Ce schéma peut sembler complexe mais avec quelques explications il est plus facile de le comprendre
 
 ![La vie d'un flux](diagram.svg)
