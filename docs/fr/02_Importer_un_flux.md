@@ -1,4 +1,4 @@
-Avant d'importer une flux pensez à correctement [configurer le module](!fr/installation).
+Avant d'importer une flux pensez à correctement [configurer le module](!fr/Installation).
 
 Selon le format du flux à importer il peut y avoir des étapes supplémentaires. Par exemple si le flux est doccument Excel, il faudra d'abord le convertir en CSV.
 
