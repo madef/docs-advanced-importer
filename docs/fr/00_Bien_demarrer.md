@@ -9,14 +9,18 @@ Pour ce qui est des fichiers de tableurs (Excel, Libre Office, ...), il doivent 
 
 ## Tâche planifiée
 
+La premier rôle du module est de planifier et d'exécuter des tâches. Par exemple, il est possible de télécharger toutes les nuits un flux XML ou CSV.
+
+Le module immite le fonctionnement du [Cron Unix](https://fr.wikipedia.org/wiki/Cron).
+
 ## Principe de base de l'import d'un flux
 
-Entre l'importation du flux et l'import effectif de ce dernier il y a de nombreuses étapes.
+Entre le téléchargement du flux et l'import effectif de ce dernier il y a de nombreuses étapes.
 
 On distingue plusieurs grandes étapes :
 1. Téléchargement du fichier de flux
 2. Conversion du fichier de flux dans le format compréhensible par le module
-3. Lecture du flux et enregistrement en multiple « blocs »
+3. Lecture du flux et enregistrement en multiple « **blocs** »
 4. Conversion des blocs en entités PrestaShop
 
 Les deux premières étapes demande des actions de configurations. Les deux autres, sont autonomes et ne demande pas de configuration.
@@ -30,8 +34,15 @@ Il existe 3 façons de télécharger un flux :
 - depuis une URL,  via une tâche planifiée
 - depuis un serveur FTP,  via une tâche planifiée
 
+### Conversion du fichier de flux
 
-Pour ce qui connaissent le fonctionnement des ETL, le module s'en inspire grandement. Un modèle est en fait l'**extracteur**. Son rôle est de convertir le flux en format entités (block). L'exécution des blocs se charge de **transformer** l'entité en entité PrestaShop et de la **charger** en base de donnée.
+Par défaut, le module ne sait taiter que des fichiers XML dans un format spécifique. Dans toute la documentation, on retrouvera le format natif. Seulement dans les chapitres traitant spécifiquemet de la conversion est présent des exemples au format non natifs.
+
+La conversion est effectuée cnnjointement au téléchargement du flux. La conversion est effectuée au moyen d'un « **modèle** ». Il permet de convertir des fichiers CSV ou XML dans le format attendu par le module au moyen d'une **XSLT**. Il est possible de créer un modèle avec un assistant, afin de ne pas à avoir à ecrire d'XSLT. Cette méthode est plus simple, mais ne permet pas de couvrir l'intégralité des possibilitées offerte par le module.
+
+## ETL
+
+Pour ce qui connaissent le fonctionnement des ETL, le module s'en inspire grandement. Un modèle est en fait « l'**extracteur** ». Son rôle est de convertir le flux en « **blocs** ». L'exécution des **blocs**, **transforme** en entité PrestaShop et la **charge** en base de donnée.
 
 
 Voici un schéma résumant la vie d'une flux. Ce schéma peut sembler complexe mais avec quelques explications il est plus facile de le comprendre
