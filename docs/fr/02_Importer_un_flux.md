@@ -10,7 +10,7 @@ Selon le format du flux à importer il peut y avoir des étapes supplémentaires
 
 La première étape est donc généralement de créer un modèle. Si votre flux est un CSV, ou un XML venant d'un prestataire alors la création d'un modèle est nécéssaire.
 
-Le modèle permet de convertir XML ou CSV en XML comprehenttible par le module.
+Le modèle permet de convertir XML ou CSV en XML compréhensible par le module.
 
 
 
