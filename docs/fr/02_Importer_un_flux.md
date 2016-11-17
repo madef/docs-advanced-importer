@@ -20,7 +20,7 @@ S'il s'agit d'un flux produit alors il est possible d'utiliser l'assistant de cr
 
 ### Créer une classe PHP de modèle
 
-Si votre flux doit faire appel à une API externe, si le format du flux est une format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module, alors l'écriture du d'une classe PHP sera nécessaire. Vous trouverez plus d'information dans [la pages dédiée aux extracteurs].
+Si votre flux doit faire appel à une API externe, si le format du flux est une format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module, alors l'écriture du d'une classe PHP sera nécessaire. Vous trouverez plus d'information dans [la page dédiée aux extracteurs](!fr/Avancé/Extracteurs).
 
 
 
