@@ -31,8 +31,8 @@ Le téléchargement du flux n'est pas abordé en détail ici, vous pouvez trouve
 
 Il existe 3 façons de télécharger un flux :
 - manuellement, en utilisant un formulaire dédié
-- depuis une URL,  via une tâche planifiée
-- depuis un serveur FTP,  via une tâche planifiée
+- depuis une URL, via une tâche planifiée
+- depuis un serveur FTP, via une tâche planifiée
 
 ### Conversion du fichier de flux
 
