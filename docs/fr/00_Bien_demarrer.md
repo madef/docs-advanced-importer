@@ -23,7 +23,7 @@ Les deux premières étapes demande des actions de configurations. Les deux autr
 
 ### Téléchargement du fichier de flux
 
-Le téléchargement du flux n'est pas abordé en détail ici, vous pouvez trouver plus d'information dans la section [Importer un flux].
+Le téléchargement du flux n'est pas abordé en détail ici, vous pouvez trouver plus d'information dans la section [Importer un flux](!Importer_un_flux).
 
 Il existe 3 façons de télécharger un flux :
 - manuellement, en utilisant un formulaire dédié
