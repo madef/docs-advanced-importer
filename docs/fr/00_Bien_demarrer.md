@@ -7,15 +7,31 @@ Comme le nom du module le suggère il est possible d'importer des XML, des CSV, 
 
 Pour ce qui est des fichiers de tableurs (Excel, Libre Office, ...), il doivent être préalablement convertit en CSV.
 
-## Principe de base
+## Tâche planifiée
+
+## Principe de base de l'import d'un flux
 
 Entre l'importation du flux et l'import effectif de ce dernier il y a de nombreuses étapes.
 
 On distingue plusieurs grandes étapes :
-- Téléchargement du fichier de flux
-- Conversion du fichier de flux dans le format compréhensible par le module
-- Lecture du flux et enregistrement en multiple « blocs »
-- Conversion des blocs en entités PrestaShop
+1. Téléchargement du fichier de flux
+2. Conversion du fichier de flux dans le format compréhensible par le module
+3. Lecture du flux et enregistrement en multiple « blocs »
+4. Conversion des blocs en entités PrestaShop
+
+Les deux premières étapes demande des actions de configurations. Les deux autres, sont autonomes et ne demande pas de configuration.
+
+### Téléchargement du fichier de flux
+
+Le téléchargement du flux n'est pas abordé en détail ici, vous pouvez trouver plus d'information dans la section [Importer un flux].
+
+Il existe 3 façons de télécharger un flux :
+- manuellement, en utilisant un formulaire dédié
+- depuis une URL,  via une tâche planifiée
+- depuis un serveur FTP,  via une tâche planifiée
+
+
+Pour ce qui connaissent le fonctionnement des ETL, le module s'en inspire grandement. Un modèle est en fait l'**extracteur**. Son rôle est de convertir le flux en format entités (block). L'exécution des blocs se charge de **transformer** l'entité en entité PrestaShop et de la **charger** en base de donnée.
 
 
 Voici un schéma résumant la vie d'une flux. Ce schéma peut sembler complexe mais avec quelques explications il est plus facile de le comprendre
