@@ -42,6 +42,6 @@ Pour activer le module aller dans "Configuration" du menu plus haut. Renseigner 
 
 ![image alt text](image_3.png)
 
-## Tester le bon foctionnement du module
+## Tester le bon fonctionnement du module
 
 Téléchargez le flux [suivant](!flow/check-install.xml)
