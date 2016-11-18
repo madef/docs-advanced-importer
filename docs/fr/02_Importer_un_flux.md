@@ -16,6 +16,12 @@ S'il s'agit d'un flux produit alors il est possible d'utiliser l'assistant de cr
 
 ### Créer un modèle avec l'assistant
 
+Commencez par importer votre flux en choisissant «Téléchargement » du sous menu « PrestaShop XML Importer ». De préférence, choisissez un flux plus petit ne contenant que peu de données. Plus le fichier sera petit, plus l'assistant sera rapide.
+
+Ensuite, il vous sera demandé de nommer le modèle. Si votre fichier est un XML, alors il vous sera demandé d'identifier la racine de chaque produit.
+
+If you try to create a template for an XML, the assistant will ask you to define the xpath of the items. In other words, the path to the node of the products:
+
 ### Créer un modèle
 
 ### Créer une classe PHP de modèle
