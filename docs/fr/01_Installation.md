@@ -45,3 +45,19 @@ Pour activer le module aller dans "Configuration" du menu plus haut. Renseigner 
 ## Tester le bon fonctionnement du module
 
 Téléchargez le flux [suivant](!flow/check-install.xml)
+
+L’importation du backoffice se fait via l’onglet « PrestaShop XML Importer » > « Téléchargement »
+
+![image alt text](image_4.png)
+
+Téléchargez le flux via le formulaire :
+
+![image alt text](image_5.png)
+
+Après quelques minutes un nouveau produit devrait être présent.
+
+Si vous n'avez pas activé le smartcron, alors il faudra entrer dans un nouvel onglet du navigateur l’url suivante : [http://localhost/prestashop/modules/advancedimporter/cron.php?debug](http://localhost/prestashop/modules/advancedimporter/cron.php?debug)
+
+"localhost" et “prestashop” de l’url sont à adapter en fonction de votre configuration. [http://localhost/prestashop/](http://localhost/prestashop/) étant l’url de la page d’accueil de votre boutique.
+
+Si le produit n'est pas créé, contatez [notre support](!https://addons.prestashop.com/fr/contactez-nous?id_product=7951).
