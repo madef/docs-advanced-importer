@@ -34,7 +34,7 @@ Le smart cron simule le cron unix, ce dernier permet d'exécuter des tâches tou
 
 **L’activation ne peut être faite que depuis votre environnement de production.**
 
-Si vous avez un environnement de préproduction accessible depuis l’extérieur contactez-nous via [le formulaire de PrestaShop Addons](!https://addons.prestashop.com/fr/contactez-nous?id_product=7951).
+Si vous avez un environnement de préproduction accessible depuis l’extérieur contactez-nous via [le formulaire de PrestaShop Addons](https://addons.prestashop.com/fr/contactez-nous?id_product=7951).
 
 Depuis un environnement local, le module fonctionnera en mode dégradé. Ce mode est suffisant pour faire des tests mais ne permet pas d’effectuer des tâches récurrentes.
 
@@ -60,4 +60,4 @@ Si vous n'avez pas activé le smartcron, alors il faudra entrer dans un nouvel o
 
 "localhost" et “prestashop” de l’url sont à adapter en fonction de votre configuration. [http://localhost/prestashop/](http://localhost/prestashop/) étant l’url de la page d’accueil de votre boutique.
 
-Si le produit n'est pas créé, contatez [notre support](!https://addons.prestashop.com/fr/contactez-nous?id_product=7951).
+Si le produit n'est pas créé, contatez [notre support](https://addons.prestashop.com/fr/contactez-nous?id_product=7951).
