@@ -44,7 +44,7 @@ Pour activer le module aller dans "Configuration" du menu plus haut. Renseigner 
 
 ## Tester le bon fonctionnement du module
 
-Téléchargez le flux [suivant](!../flow/check-install.xml)
+Téléchargez le flux [suivant]  (!../flow/check-install.xml)
 
 L’importation du backoffice se fait via l’onglet « PrestaShop XML Importer » > « Téléchargement »
 
