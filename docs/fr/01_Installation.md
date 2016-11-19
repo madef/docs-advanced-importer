@@ -12,7 +12,7 @@ Pour installer le module à partir de l'archive. Rendez-vous dans l'onglet « mo
 
 Cliquez sur le bouton « ajouter » (bouton « + »). Un formulaire devrait apparaitre :
 
-![image alt text] (image_0.png)
+![image alt text](media/image_0.png)
 
 Choisissez l’archive zip du module puis cliquez sur le bouton « Charger le module ».
 
@@ -20,11 +20,11 @@ Un message vous informe que le module est téléchargé.
 
 Dans la recherche des modules recherchez « importer » puis cliquez sur le bouton « installer ».
 
-![image alt text] (image_1.png)
+![image alt text](media/image_1.png)
 
 Dans le menu une nouvelle entrée fait son apparition :
 
-![image alt text] (image_2.png)
+![image alt text](media/image_2.png)
 
 Le module est maintenant installé. Il nous reste plus qu’à l’activer.
 
@@ -40,7 +40,7 @@ Depuis un environnement local, le module fonctionnera en mode dégradé. Ce mode
 
 Pour activer le module aller dans "Configuration" du menu plus haut. Renseigner le champ « Référence de commande » avec le numéro de votre commande et activez l’api « smart cron ».
 
-![image alt text] (image_3.png)
+![image alt text](media/image_3.png)
 
 ## Tester le bon fonctionnement du module
 
@@ -48,11 +48,11 @@ Téléchargez le flux [suivant]  (!../flow/check-install.xml)
 
 L’importation du backoffice se fait via l’onglet « PrestaShop XML Importer » > « Téléchargement »
 
-![image alt text] (image_4.png)
+![image alt text](media/image_4.png)
 
 Téléchargez le flux via le formulaire :
 
-![image alt text] (image_5.png)
+![image alt text](media/image_5.png)
 
 Après quelques minutes un nouveau produit devrait être présent.
 
