@@ -26,7 +26,7 @@ If you try to create a template for an XML, the assistant will ask you to define
 
 ### Créer une classe PHP de modèle
 
-Si votre flux doit faire appel à une API externe, si le format du flux est une format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module, alors l'écriture du d'une classe PHP sera nécessaire. Vous trouverez plus d'information dans [la page dédiée aux extracteurs]   (!fr/Avancé/Extracteurs).
+Si votre flux doit faire appel à une API externe, si le format du flux est une format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module, alors l'écriture du d'une classe PHP sera nécessaire. Vous trouverez plus d'information dans [la page dédiée aux extracteurs](!fr/Aller_plus_loin/Extracteurs).
 
 
 
