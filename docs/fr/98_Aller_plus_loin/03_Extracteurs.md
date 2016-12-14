@@ -22,7 +22,7 @@ class AIXmlExtractor implements AIExtractorInterface
 
 ```
 
-L'extracteur CSV est plus complèxe, il transforme les colonnes du CSV en XML. Lle format de sortie resemble à cela :
+L'extracteur CSV est plus complèxe, il transforme les colonnes du CSV en XML. Le format de sortie resemble à cela :
 
 ```
 <csv>
