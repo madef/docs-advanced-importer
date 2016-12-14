@@ -3,7 +3,7 @@ Il est capable de gérer des flux de plusieurs centaines de Mo.
 
 Le module sait importer toutes les entités de PrestaShop (classes PHP héritant de ObjectModel).
 
-Comme le nom du module le suggère il est possible d'importer des XML, des CSV, mais aussi de fichiers plats type mqseries (en cour de développement).
+Comme le nom du module le suggère, il est possible d'importer des fichiers XML, CSV, mais aussi des fichiers plats type mqseries (en cours de développement).
 
 Pour ce qui est des fichiers de tableurs (Excel, Libre Office, ...), il doivent être préalablement convertit en CSV.
 
@@ -23,7 +23,7 @@ On distingue plusieurs grandes étapes :
 3. Lecture du flux et enregistrement en multiple « **blocs** »
 4. Conversion des blocs en entités PrestaShop
 
-Les deux premières étapes demande des actions de configurations. Les deux autres, sont autonomes et ne demande pas de configuration.
+Les deux premières étapes demandent des actions de configurations. Les deux autres, sont autonomes et ne demandent pas de configuration.
 
 ### Téléchargement du fichier de flux
 
@@ -38,15 +38,15 @@ Il existe 3 façons de télécharger un flux :
 
 Par défaut, le module ne sait taiter que des fichiers XML dans un format spécifique. Dans toute la documentation, on retrouvera le format natif. Seulement dans les chapitres traitant spécifiquemet de la conversion est présent des exemples au format non natifs.
 
-La conversion est effectuée cnnjointement au téléchargement du flux. La conversion est effectuée au moyen d'un « **modèle** ». Il permet de convertir des fichiers CSV ou XML dans le format attendu par le module au moyen d'une **XSLT**. Il est possible de créer un modèle avec un assistant, afin de ne pas à avoir à ecrire d'XSLT. Cette méthode est plus simple, mais ne permet pas de couvrir l'intégralité des possibilitées offerte par le module.
+La conversion est effectuée cnnjointement au téléchargement du flux. La conversion est effectuée au moyen d'un « **modèle** ». Il permet de convertir des fichiers CSV ou XML dans le format attendu par le module au moyen d'une **XSLT**. Il est possible de créer un modèle avec un assistant, afin de ne pas à avoir à ecrire d'XSLT. Cette méthode est plus simple, mais ne permet pas de couvrir l'intégralité des possibilitées offerte par le module.
 
 ## ETL
 
-Pour ce qui connaissent le fonctionnement des ETL, le module s'en inspire grandement. Un modèle est en fait « l'**extracteur** ». Son rôle est de convertir le flux en « **blocs** ». L'exécution des **blocs**, **transforme** en entité PrestaShop et la **charge** en base de donnée.
+Pour ce qui connaissent le fonctionnement des ETL, le module s'en inspire grandement. Un modèle est en fait « l'**extracteur** ». Son rôle est de convertir le flux en « **blocs** ». L'exécution des **blocs**, **transforme** en entité PrestaShop et la **charge** en base de donnée.
 
 ## Organisation de la documentation
 
-Dans l'intégralité de cette documentation, est concidéré que vous avez créé un modèle permettant de traiter votre flux dans le format du fournisseur. Seule la page [Importer un flux](!fr/Importer_un_flux) détaille l'import de flux au format fournisseur. L'ensemble des exemples de flux sont donc ceux supportés par le module est ne nécéssitant par de modèle.
+Dans l'intégralité de cette documentation, il sera concidéré que vous avez créé un modèle permettant de traiter votre flux dans le format du fournisseur. Seule la page [Importer un flux](!fr/Importer_un_flux) détaille l'import de flux au format fournisseur. L'ensemble des exemples de flux sont donc ceux supportés par le module est ne nécéssitant par de modèle particulier.
 
 ## Fonctionnalités
 
