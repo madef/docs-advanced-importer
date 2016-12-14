@@ -9,4 +9,4 @@ Voici une liste des tarifs donnés à titre indicatif. Ces tarifs sont à ajoute
 * réalisation d'un modèle pour un flux commande : 350€
 * développement d'un modifieur : 75€
 
-Toute ces prestations payantes sont effectées en général dans les 14 jours. Un delai plus court peut être garanti selon la situation et avec des tarifs 30% plus élevé en général.
+Toutes ces prestations payantes sont effectées en général dans les 14 jours. Un delai plus court peut être garantis selon la situation et avec des tarifs 30% plus élevé en général.
