@@ -75,6 +75,32 @@ Ou encore pour lier le produit à la sous-catégorie :
 
 ## Références fourniseurs
 
+Si vous aviez exécuté les flux plusieurs fois alors vous avez remarqué que les entités ont été dupliquées.
+
+Pour éviter cela, il faut identifier les entités au moyen de la référence fournisseur :
+
+```
+<advancedimporter>
+    <product supplier-reference="test">
+        <name>test</name>
+        <price>10</price>
+    </product>
+</advancedimporter>
+```
+
+Notez que la référence fournisseur est spécifique au type de l'entité. Vous pouvez donc utiliser la référence fournisseur « test » pour un produit et une catégorie :
+
+
+```
+<advancedimporter>
+    <category supplier-reference="test">
+        <name>test</name>
+    </category>
+</advancedimporter>
+```
+
 ## Suppression
+
+
 
 ## Suppression des manquants
