@@ -124,6 +124,7 @@ Les attributs sont alors optionels :
 
 Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « autodelete » dans la balise racine. Cette attribut doit avoir comme paramettre le nom du fournisseur. Seul les entités importées avec le module et une reférence externe pour être nettoyées automatiquement.
 
+Premier flux, création de « test 1 » et  « test 2 » :
 ```
 <advancedimporter auto-delete="supplier">
     <product supplier-reference="test1">
@@ -137,6 +138,7 @@ Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Po
 </advancedimporter>
 ```
 
+Second flux, suppression de « test 2 » :
 ```
 <advancedimporter auto-delete="supplier">
     <product supplier-reference="test1">
