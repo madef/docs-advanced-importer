@@ -121,3 +121,27 @@ Les attributs sont alors optionels :
 ```
 
 ## Suppression des manquants
+
+Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « autodelete » dans la balise racine. Cette attribut doit avoir comme paramettre le nom du fournisseur. Seul les entités importées avec le module et une reférence externe pour être nettoyées automatiquement.
+
+```
+<advancedimporter auto-delete="supplier">
+    <product supplier-reference="test1">
+        <name>test 1</name>
+        <price>10</price>
+    </product>
+    <product supplier-reference="test2">
+        <name>test 2</name>
+        <price>10</price>
+    </product>
+</advancedimporter>
+```
+
+```
+<advancedimporter auto-delete="supplier">
+    <product supplier-reference="test1">
+        <name>test 1</name>
+        <price>10</price>
+    </product>
+</advancedimporter>
+```
