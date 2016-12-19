@@ -101,6 +101,23 @@ Notez que la référence fournisseur est spécifique au type de l'entité. Vous 
 
 ## Suppression
 
+La supressions des éléments se fait en ajoutant l'attribut « delete="1" » :
 
+```
+<advancedimporter>
+    <product supplier-reference="test" delete="1">
+        <name>test</name>
+        <price>10</price>
+    </product>
+</advancedimporter>
+```
+
+Les attributs sont alors optionels :
+
+```
+<advancedimporter>
+    <product supplier-reference="test" delete="1" />
+</advancedimporter>
+```
 
 ## Suppression des manquants
