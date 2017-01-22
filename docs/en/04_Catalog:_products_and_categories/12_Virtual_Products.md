@@ -20,3 +20,5 @@ To create an vitual products, you have to set it's is_virtual and add a block "p
     </product>
 </products>
 ```
+
+You can also set the date of expiration with "date_expiration", the number of time the file can be downloaded with "nb_downloadable", or if the file is shareable with "is_shareable".
