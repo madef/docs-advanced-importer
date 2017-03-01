@@ -44,23 +44,23 @@ The feature tag do not support multilanguage. To set multilangue you need to use
 	<product external-reference="demo-1">
 		<name>Name</name>
         <block>
-            <objects>
-                <object type="feature" external-reference="feature-test">
-                    <name lang="en">My feature</name>
-                    <name lang="fr">Ma caractéristique</name>
-                </object>
-                <object type="featureValue" external-reference="feature-value-test">
-                    <value lang="en">My value</value>
-                    <value lang="fr">Ma valeur</value>
-                    <external_reference for="id_feature" type="feature">feature-test</external_reference>
-                </object>
-            </objects>
-            <products>
-                <product external-reference="demo-1">
-                    <feature external-reference="feature-test" external-reference-value="feature-value-test" />
-                </product>
-            </products>
-        </block>
+			<objects>
+				<object type="feature" external-reference="feature-test">
+					<name lang="en">My feature</name>
+					<name lang="fr">Ma caractéristique</name>
+				</object>
+				<object type="featureValue" external-reference="feature-value-test">
+					<value lang="en">My value</value>
+					<value lang="fr">Ma valeur</value>
+						<external_reference for="id_feature" type="feature">feature-test</external_reference>
+				</object>
+			</objects>
+			<products>
+				<product external-reference="demo-1">
+					<feature external-reference="feature-test" external-reference-value="feature-value-test" />
+				</product>
+			</products>
+		</block>
 	</product>
 </products>
 ```
