@@ -43,7 +43,7 @@ The feature tag do not support multilanguage. To set multilangue you need to use
 <products>
 	<product external-reference="demo-1">
 		<name>Name</name>
-        <block>
+		<block>
 			<objects>
 				<object type="feature" external-reference="feature-test">
 					<name lang="en">My feature</name>
