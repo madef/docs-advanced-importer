@@ -36,7 +36,7 @@ Creation of features:
 </products>
 ```
 
-The feature tag do not support multilanguage. To set multilangue you need to use a bloc with an objects flow :
+The feature tag do not support multilanguage. To set multilangue you need to use a block with an objects flow :
 
 
 ```
