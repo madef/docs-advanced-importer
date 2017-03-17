@@ -10,6 +10,7 @@ By default the price of the products are tax exclude. It's poossible to define t
 		<categorypath separator="&gt;"><![CDATA[cat1 > cat2 > cat3]]></categorypath> <!-- Add product in category cat1 > cat2 > cat3 -->
 		<price_type>ti</price_type> <!-- ti = tax include, te (default) = tax exclude -->
 		<price>19.99</price>
+        <id_tax_rules_group>1</id_tax_rules_group>
 	</product>
 </products>
 ```
@@ -21,10 +22,11 @@ It's also possible to define customs fields as tax fields:
 	<product external-reference="demo-1">
 		<name>Name</name>
 		<description>Product description</description>
-		<<categorypath separator="&gt;"><![CDATA[cat1 > cat2 > cat3]]></categorypath> <!-- Add product in category cat1 > cat2 > cat3 -->
+		<categorypath separator="&gt;"><![CDATA[cat1 > cat2 > cat3]]></categorypath> <!-- Add product in category cat1 > cat2 > cat3 -->
 		<tax_fields>custom_tax</tax_fields>
 		<price_type>ti</price_type> <!-- ti = tax include, te (default) = tax exclude -->
 		<price>19.99</price>
+        <id_tax_rules_group>1</id_tax_rules_group>
 	</product>
 </products>
 ```
