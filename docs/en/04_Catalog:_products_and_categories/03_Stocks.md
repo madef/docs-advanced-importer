@@ -45,6 +45,49 @@ Definition of the stock for the variant by using the external reference:
 
 Beware : This flow will show as an error if the variant "combination-1" does not exist (cf 8.2).
 
+You can use the product id, combination id, ean and reference to identify the product and combination:
+
+```
+<stocks>
+	<stock>
+		<product>12</product>
+		<combination>23</combination>
+		<mode>set</mode>
+		<quantity>10</quantity>
+	</stock>
+</stocks>
+```
+
+```
+<stocks>
+	<stock>
+		<reference>demo-1</reference>
+		<mode>set</mode>
+		<quantity>10</quantity>
+	</stock>
+</stocks>
+```
+
+```
+<stocks>
+	<stock>
+		<supplier_reference>demo-1</supplier_reference>
+		<mode>set</mode>
+		<quantity>10</quantity>
+	</stock>
+</stocks>
+```
+
+```
+<stocks>
+	<stock>
+		<ean13>ean code</ean13>
+		<mode>set</mode>
+		<quantity>10</quantity>
+	</stock>
+</stocks>
+```
+
 ## Stock movement in the flow product
 
 It is possible to modify the stocks directly from the flow product by using the [blocks](Basics_About_XML).
@@ -56,7 +99,7 @@ If you use avanced stock the previous example will not works. To de fine the sto
 ```
 <stocks>
     <stock>
-        <reference>test01</reference>
+        <reference>demo-1</reference>
         <warehouse>1</warehouse> <!-- required -->
         <price>10</price> <!-- required -->
         <quantity>10</quantity> <!-- required -->
