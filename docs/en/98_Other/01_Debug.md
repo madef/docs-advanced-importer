@@ -14,7 +14,7 @@ This case can occur when the execution of the blocks ends unexpectedly or when t
 
 **Big block**
 
-Blocks are stored in database. Sometime the data can be truncated. In the case you need to change the schema of the table ALTER ps_advancedimporter_block:
+Blocks are stored in database. Sometime the data can be truncated. In the case you need to change the schema of the table ps_advancedimporter_block:
 
 ```
 ALTER TABLE `ps_advancedimporter_block`
