@@ -12,3 +12,11 @@ This issue occurs when the file "lock" cannot be deleted. to correct this, delet
 
 This case can occur when the execution of the blocks ends unexpectedly or when the error cannot be interpreted by the module. In this case, go to the first example of the flow product ([product-1.xml](http://prestashopxmlimporter.madef.fr/flows_en/product-1.xml)). Please replace the language by the one used by default by your shop.
 
+**Big block**
+
+Blocks are stored in database. Sometime the data can be truncated. In the case you need to change the schema of the table ALTER ps_advancedimporter_block:
+
+```
+ALTER TABLE `ps_advancedimporter_block`
+MODIFY COLUMN `block` LONGTEXT;
+```
