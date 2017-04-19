@@ -19,6 +19,19 @@ Creation of a category:
 </objects>
 ```
 
+It's possible to import the image of the category:
+
+```
+<objects>
+	<object type="category" external-reference="demo-1">
+		<name>Name of the category</name>
+		<image>http://…</image>
+		<link_rewrite>Name</link_rewrite>
+		<id_parent>2</id_parent>
+	</object>
+</objects>
+```
+
 Creation of a category with the parent file external reference demo-1:
 
 ```
