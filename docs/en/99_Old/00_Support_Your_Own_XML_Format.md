@@ -20,8 +20,8 @@ This tool enables the creation of the XSLT for the flow product without any part
 	<!ENTITY reg	"®">
 	<!ENTITY trade  "™">
 	<!ENTITY mdash  "—">
-	<!ENTITY ldquo "“">
-	<!ENTITY rdquo "”">
+	<!ENTITY ldquo  "“">
+	<!ENTITY rdquo  "”">
 	<!ENTITY pound  "£">
 	<!ENTITY yen	"¥">
 	<!ENTITY euro   "€">
