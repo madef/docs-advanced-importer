@@ -64,3 +64,19 @@ The feature tag do not support multilanguage. To set multilangue you need to use
 	</product>
 </products>
 ```
+
+## Keep the previously defined features
+
+By default, all features previously set to a product are removed. You can change this working on setting the option autodelete-features to "0":
+
+```
+<products>
+	<product external-reference="demo-1" autodelete-features="0">
+		<name>Name</name>
+		<feature external-reference="feature-test" external-reference-value="feature-value-test" /> <!-- Add using external reference (cf "Flow object") -->
+		<feature id="3" id-value="16" /> <!-- Add using ids -->
+		<feature name="Prise casque" name-value="Jack stéréo"/> <!-- Add using names. If value do not exists, it will be create. -->
+		<feature name="Test" name-value="Test Value" custom="1"/> <!-- Add using custom value (not recommended) -->
+	</product>
+</products>
+```
