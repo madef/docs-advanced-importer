@@ -54,6 +54,7 @@ Creation or modification of two variants:
 			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
 			</images>
 			<attributes use-external-reference="1">demo-recto-color-blue</attributes>
+            <default_on>1</default_on> <!-- one combination must be set as the default combination -->
 		</combinations>
 		<combinations external-reference="combination-2">
 			<price>11.5</price>
@@ -64,6 +65,11 @@ Creation or modification of two variants:
 	</product>
 </products>
 ```
+
+## Default combination
+
+The default combination must be defined with the node default_on. If no combinations is set as default, the price and images could be wrong on the front office. If you cannot define one particular combination as default, define all as default: the last combination will be set as default.
+
 
 ## Creation of attributes and of variants in the flow product 
 
@@ -112,6 +118,7 @@ In order to create the attributes and their values in the flow product, we use t
 							<url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
 						</images>
 						<attributes use-external-reference="1">demo-recto-color-blue</attributes>
+                        <default_on>1</default_on> <!-- one combination must be set as the default combination -->
 					</combinations>
 					<combinations external-reference="combination-2">
 						<price>11.5</price>
@@ -148,6 +155,7 @@ By defaut the combination of the product not specified will be removed. You can 
 			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
 			</images>
 			<attributes use-external-reference="1">demo-recto-color-blue</attributes>
+            <default_on>1</default_on> <!-- one combination must be set as the default combination -->
 		</combinations>
 		<combinations external-reference="combination-2">
 			<price>11.5</price>
@@ -204,6 +212,7 @@ To remove the texture, set an empty value:
 			    <url>http://prestashopxmlimporter.madef.fr/en/numbers/number-1.jpg</url>
 			</images>
 			<attributes use-external-reference="1">demo-recto-color-blue</attributes>
+            <default_on>1</default_on> <!-- one combination must be set as the default combination -->
 		</combinations>
 		<combinations external-reference="combination-2">
 			<default_on>1</default_on>
