@@ -15,7 +15,7 @@ Par exemple si vous souhaitez importer un produit dans le store 2 et 3 seulement
 </advancedimporter>
 ```
 
-Si vous souhaitez avoir un nom de produit différent pour chacune des boutiques, vous procéderez e la manière suivante :
+Si vous souhaitez avoir un nom de produit différent pour chacune des boutiques, vous procéderez de la manière suivante :
 
 ```
 <advancedimporter>
@@ -30,7 +30,7 @@ Si vous souhaitez avoir un nom de produit différent pour chacune des boutiques,
 </advancedimporter>
 ```
 
-Attention, la boutique par défaut du produit, sera toujours celle de la première boutique définit dans le flux. Dans notre cas c'est la boutique 2é. Si on souhaite l'inverse, il faut que le flux ressemble à :
+Attention, la boutique par défaut du produit, sera toujours celle de la première boutique définit dans le flux. Dans notre cas c'est la boutique 2. Si on souhaite l'inverse, il faut que le flux ressemble à :
 
 ```
 <advancedimporter>
@@ -45,9 +45,9 @@ Attention, la boutique par défaut du produit, sera toujours celle de la premiè
 </advancedimporter>
 ```
 
-Dans tous ces exemples précédent, le produit n'est pas importé dans la boutique 1.
+Dans tous les exemples précédent, le produit n'est pas importé dans la boutique 1.
 
-Si vous souhaitez importer un produit dans toute les boutiques alors il suffit de ne pas préciser la boutique :
+Si vous souhaitez importer un produit dans toutes les boutiques alors il suffit de ne pas préciser la boutique :
 
 ```
 <advancedimporter>
@@ -58,7 +58,7 @@ Si vous souhaitez importer un produit dans toute les boutiques alors il suffit d
 </advancedimporter>
 ```
 
-Si vous souhaitez importer un produit dans toute les boutiques et le presonnaliser pour une seule alors il faut créer d'abbord le produit sur toute les boutiques puis le modifier sur la boutique souhaité :
+Si vous souhaitez importer un produit dans toutes les boutiques et le presonnaliser pour une seule alors il faut créer d'abbord le produit sur toutes les boutiques puis le modifier sur la boutique souhaitée :
 
 ```
 <advancedimporter>
@@ -88,7 +88,7 @@ Ceci ne marchera pas :
 </advancedimporter>
 ```
 
-Enfin passer un flux sans préciser les boutiques après avoir enregistré les produit dans des boutique spécifique aura un effet innatendu. Il n'est donc pas recomander de passer les deux flux suivant dans cette ordre :
+Enfin passer un flux sans préciser les boutiques après avoir enregistré les produits dans des boutiques spécifique aura un effet innatendu. Il n'est donc pas recomandé de passer les deux flux suivant dans cette ordre :
 
 
 ```
