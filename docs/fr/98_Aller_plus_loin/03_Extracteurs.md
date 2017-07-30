@@ -22,7 +22,7 @@ class AIXmlExtractor implements AIExtractorInterface
 
 ```
 
-L'extracteur CSV est plus complèxe, il transforme les colonnes du CSV en XML. Le format de sortie resemble à cela :
+L'extracteur CSV est plus complexe, il transforme les colonnes du CSV en XML. Le format de sortie resemble à cela :
 
 ```
 <csv>
@@ -45,15 +45,15 @@ L'extracteur doit être sélectionné lors de la création d'un nouveau modèle 
 
 Si votre flux est un peu complèxe, il peut être utile de créer votre propre extracteur.
 
-Cela est particulièrement vrai, si vous avez besoin de faire appel à une API externe, si le format du flux est une format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module.
+Cela est particulièrement vrai, si vous avez besoin de faire appel à une API externe, si le format du flux est un format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module.
 
-La création d'un extracter consiste en la création d'une classe PHP. Attention, il faut respecter les convention de nommage.
+La création d'un extracteur consiste en la création d'une classe PHP. Attention, il faut respecter les conventions de nommage.
 
-La classe doit se nommer AI<votre exporter avec la première lettre en majuscule>Extractor. Exemple : AiCustomExtractor
+La classe doit se nommer AI<votre exporteur avec la première lettre en majuscule>Extractor. Exemple : AiCustomExtractor
 
 Le fichier doit être placé dans le dossier modules/advancedimporter/classes/extractor
 
-Le nom du fichier doit être le nom de votre exporteur en minuscule. Exemple : custom.php
+Le nom du fichier doit être le nom de votre extracteur en minuscule. Exemple : custom.php
 
 La classe doit implémenter AIExtractorInterface et les méthodes **getName** et **extract** doivent être définies.
 
@@ -79,7 +79,7 @@ class AICustomExtractor implements AIExtractorInterface
 
 ```
 
-Pour appliquer cet extractor, il faut créer un nouveau template est sélectionner l'extractor **Custom**.
+Pour appliquer cet extractor, il faut créer un nouveau modèle est sélectionner l'extracteur **Custom**.
 Après cela il faudra importer votre flux en sélectiononnant le nouveau template.
 
 
