@@ -1,4 +1,4 @@
-Si votre flux XML sépbre les entités par langue, ou que votre CSV utilise une ligne par langue, alors' il faut regrouper les mêmes entités au moyen d'une XSLT.
+Si votre flux XML sépare les entités par langue, ou que votre CSV utilise une ligne par langue, alors il faut regrouper les mêmes entités au moyen d'une XSLT.
 
 
 Par exemple, pour cet XML :
@@ -95,28 +95,6 @@ Le résultat sera le suivant :
     <price>15</price>
     <name lang="fr">Name FR</name>
     <name lang="en">Name FR</name>
-  </product>
-</products>
-```
-
-Le résultat sera le suivant :
-
-```
-<?xml version="1.0" encoding="utf-8"?>
-<products>
-  <product external-reference="demo-1">
-    <reference>demo-1</reference>
-    <name>Name</name>
-    <price>13</price>
-    <combination external-reference="demo-1">
-      <color>red</color>
-    </combination>
-    <combination external-reference="demo-2">
-      <color>blue</color>
-    </combination>
-    <combination external-reference="demo-3">
-      <color>yellow</color>
-    </combination>
   </product>
 </products>
 ```
