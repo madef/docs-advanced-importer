@@ -1,4 +1,4 @@
-Pour traiter plusieurs langue, il faut préciser dans la balise du champs le code iso de la langue.
+Pour traiter plusieurs langues, il faut préciser dans la balise du champs le code iso de la langue.
 
 Voici un exemple de création de produit en anglais et français :
 
