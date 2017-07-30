@@ -122,7 +122,7 @@ Les attributs sont alors optionels :
 
 ## Suppression des manquants
 
-Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « autodelete » dans la balise racine. Cette attribut doit avoir comme paramettre le nom du fournisseur. Seules les entités importées avec le module et une reférence externe peuvent être nettoyées automatiquement.
+Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « auto-delete » dans la balise racine. Cet attribut doit avoir comme paramettre le nom du fournisseur. Seules les entités importées avec le module et ayant une reférence externe peuvent être nettoyées automatiquement.
 
 Premier flux, création de « test 1 » et  « test 2 » :
 ```
