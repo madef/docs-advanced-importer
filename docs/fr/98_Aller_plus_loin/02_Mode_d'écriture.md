@@ -1,4 +1,4 @@
-Pour plusieurs raison vous pouvez souhaiter ne pas modifier un produit si il existe déjà. Dans ce cas il faut placer dans la balise racine de l'entité le champ « mode ». Ce dernier peut prendre les valeurs suivantes :
+Pour diverse raisons, vous pouvez souhaiter de ne pas modifier un produit s'il existe déjà. Dans ce cas il faut placer dans la balise racine de l'entité le champ « mode ». Ce dernier peut prendre les valeurs suivantes :
 - create : pour la création seulement
 - update : pour la mise à jour seulement
 - both : pour la création et modification
@@ -14,7 +14,7 @@ Ne pas modifier un produit existant :
 </advancedimporter>
 ```
 
-Ne pas créer le produit si il n'existe pas :
+Ne pas créer le produit s'il n'existe pas :
 
 ```
 <advancedimporter>
