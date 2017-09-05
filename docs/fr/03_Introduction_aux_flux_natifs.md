@@ -6,7 +6,7 @@ La balise racine est toujours **advancedimporter**
 
 La balise de second niveau est le nom de la classe PHP de l'entité : product, category, order, customer, …
 
-Enfin les balises de troisième niveau sont les attributs. Par exemple on créra un produit nommé **test** avec ce flux :
+Enfin les balises de troisième niveau sont les attributs. Par exemple on créera un produit nommé **test** avec ce flux :
 
 ```
 <advancedimporter>
@@ -17,7 +17,7 @@ Enfin les balises de troisième niveau sont les attributs. Par exemple on créra
 </advancedimporter>
 ```
 
-Et de même pour une catégorie nommé **test** :
+Et de même pour une catégorie nommée **test** :
 
 ```
 <advancedimporter>
@@ -43,7 +43,7 @@ Il est possible de créer les deux dans le même flux :
 
 ## Imbrications
 
-Les entités sont parfois liée entre elles. Par exemple pour intégrer une catégorie et sa sous-catégorie :
+Les entités sont parfois liées entre elles. Par exemple pour intégrer une catégorie et sa sous-catégorie :
 
 ```
 <advancedimporter>
@@ -55,6 +55,7 @@ Les entités sont parfois liée entre elles. Par exemple pour intégrer une cat�
     </category>
 </advancedimporter>
 ```
+
 Ou encore pour lier le produit à la sous-catégorie :
 
 
@@ -75,7 +76,7 @@ Ou encore pour lier le produit à la sous-catégorie :
 
 ## Références fourniseurs
 
-Si vous aviez exécuté les flux plusieurs fois alors vous avez remarqué que les entités ont été dupliquées.
+Si vous aviez exécuté les flux plusieurs fois alors vous avez dû remarquer que les entités ont été dupliquées.
 
 Pour éviter cela, il faut identifier les entités au moyen de la référence fournisseur :
 
@@ -122,7 +123,7 @@ Les attributs sont alors optionels :
 
 ## Suppression des manquants
 
-Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « auto-delete » dans la balise racine. Cet attribut doit avoir comme paramettre le nom du fournisseur. Seules les entités importées avec le module et ayant une reférence externe peuvent être nettoyées automatiquement.
+Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « auto-delete » dans la balise racine. Cet attribut doit avoir comme paramettre le nom du fournisseur. Seules les entités importées avec le module et ayant une reférence fournisseur peuvent être supprimés automatiquement.
 
 Premier flux, création de « test 1 » et  « test 2 » :
 ```
@@ -147,3 +148,4 @@ Second flux, suppression de « test 2 » :
     </product>
 </advancedimporter>
 ```
+Attention, avec l'auto-delete le flux intégré doivent être complet sans quoi des produits seront effacés de façon définitive.
