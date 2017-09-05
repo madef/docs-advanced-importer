@@ -79,8 +79,8 @@ class AICustomExtractor implements AIExtractorInterface
 
 ```
 
-Pour appliquer cet extractor, il faut créer un nouveau modèle est sélectionner l'extracteur **Custom**.
-Après cela il faudra importer votre flux en sélectiononnant le nouveau template.
+Pour appliquer cet extracteur, il faut créer un nouveau modèle est sélectionner l'extracteur **Custom**.
+Après cela il faudra importer votre flux en sélectionnant le nouveau template.
 
 
 
