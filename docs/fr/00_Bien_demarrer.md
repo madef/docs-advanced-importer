@@ -36,9 +36,9 @@ Il existe 3 façons de télécharger un flux :
 
 ### Conversion du fichier de flux
 
-Par défaut, le module ne sait taiter que des fichiers XML dans un format spécifique. Dans toute la documentation, on retrouvera le format natif. Seulement dans les chapitres traitant spécifiquemet de la conversion est présent des exemples au format non natifs.
+Par défaut, le module ne sait taiter que des fichiers XML dans un format spécifique. Dans toute la documentation, on retrouvera le format natif. Seulement dans les chapitres traitant de la conversion d'XML ou de CSV seront présent des exemples dans un format non natif.
 
-La conversion est effectuée cnnjointement au téléchargement du flux. La conversion est effectuée au moyen d'un « **modèle** ». Il permet de convertir des fichiers CSV ou XML dans le format attendu par le module au moyen d'une **XSLT**. Il est possible de créer un modèle avec un assistant, afin de ne pas à avoir à ecrire d'XSLT. Cette méthode est plus simple, mais ne permet pas de couvrir l'intégralité des possibilitées offerte par le module.
+La conversion est effectuée conjointement au téléchargement du flux. Elle est effectuée au moyen d'un « **modèle** ». Il permet de convertir des fichiers CSV ou XML dans le format attendu par le module au moyen d'une **XSLT**. Il est possible de créer un modèle avec un assistant, afin de ne pas à avoir à ecrire d'XSLT. Cette méthode est plus simple, mais ne permet pas de couvrir l'intégralité des possibilitées offertes par le module.
 
 ## ETL
 
@@ -46,7 +46,7 @@ Pour ce qui connaissent le fonctionnement des ETL, le module s'en inspire grande
 
 ## Organisation de la documentation
 
-Dans l'intégralité de cette documentation, il sera concidéré que vous avez créé un modèle permettant de traiter votre flux dans le format du fournisseur. Seule la page [Importer un flux](!fr/Importer_un_flux) détaille l'import de flux au format fournisseur. L'ensemble des exemples de flux sont donc ceux supportés par le module est ne nécéssitant par de modèle particulier.
+Dans l'intégralité de cette documentation, il sera concidéré que vous avez créé un modèle permettant de convertir votre flux dans le format natif. Seule la page [Importer un flux](!fr/Importer_un_flux) détaille l'import de flux au format non natif. L'ensemble des exemples de flux sont donc ceux supportés par le module est ne nécéssitant par de modèle particulier.
 
 ## Fonctionnalités
 
