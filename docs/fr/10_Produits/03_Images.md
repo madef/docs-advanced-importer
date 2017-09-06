@@ -19,7 +19,7 @@ L'image peut provenir d'une URL comme dans le précédent exemple, ou du serveur
         <name>test</name>
         <price>10</price>
         <image>
-            <url>/modules/advancedimporter/img/media/01.jpg</url>
+            <url>/modules/advancedimporter/views/img/media/01.jpg</url>
             <legend>My image</legend>
         </image>
     </product>
@@ -87,14 +87,33 @@ Enfin il est possible de définir quelle image utiliser comme couverture :
         <image>
             <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
             <legend>My image 1</legend>
-            <position>2</position>
             <cover>0</cover>
         </image>
         <image>
             <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-2.jpg</url>
             <legend>My image 2</legend>
-            <position>1</position>
             <cover>1</cover>
+        </image>
+    </product>
+</advancedimporter>
+```
+
+## Optimisation
+
+Le téléchargement des image peut être long et est souvant la cause de lenteur d'importation. Afin d'éviter de télécharger des images déjà présentes, il est recommandé d'utiliser l'attribute « mode » avec pour valeur « create ». Ainsi, seules les images déjà non existante (url inconnnue) seront téléchargée.
+
+```
+<advancedimporter>
+    <product supplier-reference="test" remove-missing-images="yes">
+        <name>test</name>
+        <price>10</price>
+        <image mode="create">
+            <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+            <legend>My image 1</legend>
+        </image>
+        <image mode="create">
+            <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-2.jpg</url>
+            <legend>My image 2</legend>
         </image>
     </product>
 </advancedimporter>

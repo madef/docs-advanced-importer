@@ -30,7 +30,7 @@ Il est aussi possible de récupérer l'image sur le disque local :
 <advancedimporter>
     <category supplier-reference="category1">
         <name>catégorie</name>
-        <image>/modules/advancedimporter/img/media/01.jpg</image>
+        <image>/modules/advancedimporter/views/img/media/01.jpg</image>
     </category>
 </advancedimporter>
 ``` 
