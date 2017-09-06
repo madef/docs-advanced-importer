@@ -47,8 +47,21 @@ Si le produit peut être frationné, vous pouvez définir le prix de l'unité. L
 <advancedimporter supplier-reference="test">
     <product>
         <name>test</name>
+        <price>10</price>
+        <unitprice>1</unitprice>
+        <unity>kg</unity>
+    </product>
+</advancedimporter>
+```
+
+De la même manière que pour pour le prix, le prix unitaire est concidéré hors tax. S'il est avec taxe, il faudra rajouter l'attribut « tax » avec la valeur « include » :
+```
+<advancedimporter supplier-reference="test">
+    <product>
+        <name>test</name>
         <price tax="include">10</price>
-        <unit_price tax="include">1</unit_price>
+        <unitprice tax="include">1</unitprice>
+        <unity>kg</unity>
         <id_tax_rules_group>1</id_tax_rules_group>
     </product>
 </advancedimporter>
