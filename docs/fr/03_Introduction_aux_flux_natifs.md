@@ -100,6 +100,21 @@ Notez que la référence fournisseur est spécifique au type de l'entité. Vous 
 </advancedimporter>
 ```
 
+## Idenfieur
+
+Si vous souhaitez modifier des entités déjà existantes, alors il est possible de définir un identifiant différent de la référence fournisseur (ex : reference, code ean, ...).
+Voici un exemple de modification de produit à partir de sa référence :
+```
+<advancedimporter>
+    <product supplier-reference="reference-value" identifier="reference">
+        <reference>reference-value</reference>
+        <name>test</name>
+    </product>
+</advancedimporter>
+```
+
+Si la référence fournisseur est optionnelle, il est recommandé de la définir afin que le module l'enrenregistre et ainsi amméliorer la rapidité des futures modifications.
+
 ## Suppression
 
 La supressions des éléments se fait en ajoutant l'attribut « delete="1" » :
