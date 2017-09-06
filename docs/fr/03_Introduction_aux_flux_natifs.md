@@ -80,6 +80,10 @@ Si vous aviez exécuté les flux plusieurs fois alors vous avez dû remarquer qu
 
 Pour éviter cela, il faut identifier les entités au moyen de la référence fournisseur :
 
+### Déclaration
+
+Voici un exemple de déclaration d'un produit avec un référence fournisseur :
+
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -100,7 +104,21 @@ Notez que la référence fournisseur est spécifique au type de l'entité. Vous 
 </advancedimporter>
 ```
 
-## Idenfieur
+### Réutilisation
+
+Il est parfois utile de pouvoir pour lier des produits entre-eux d'utiliser la référence fournisseur.
+Pour cela, on rajoute l'attributs « supplier-reference » avec comme valeur le type de l'entité :
+
+```
+<advancedimporter>
+    <category supplier-reference="category2">
+        <name>test</name>
+        <id_parent supplier-reference="category">category1</id_parent>
+    </category>
+</advancedimporter>
+```
+
+## Identifieur
 
 Si vous souhaitez modifier des entités déjà existantes, alors il est possible de définir un identifiant différent de la référence fournisseur (ex : reference, code ean, ...).
 Voici un exemple de modification de produit à partir de sa référence :
