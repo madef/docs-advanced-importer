@@ -42,7 +42,7 @@ De la même manière que pour le prix, ce prix est concidéré hors tax. S'il es
 </advancedimporter>
 ```
 
-Si le produit peut être frationné, vous pouvez définir le prix de l'unité. Le prix total correspont au prix avec toutes les unités :
+Si vous souhaitez afficher le prix unitaire du produit (ex prix au kg), il est possible définir le prix de l'unité. Voici un exemple avec un produit de 10kg dont le kg est vendu 1 euro :
 ```
 <advancedimporter>
     <product supplier-reference="test">
