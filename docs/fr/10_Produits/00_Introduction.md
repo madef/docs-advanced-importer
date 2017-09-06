@@ -12,8 +12,8 @@ Voici un exemble de flux basique :
 
 Si vous souhaitez ne pas recréer un nouveau produit à chaque passage du flux, il est alors nécéssaire de rajouter la référence fournisseur :
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <price>10</price>
     </product>
@@ -22,8 +22,8 @@ Si vous souhaitez ne pas recréer un nouveau produit à chaque passage du flux, 
 
 Voici un exemple plus complet avec les attributs les plus couramment utilisés :
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <description>test</description>
         <description_short>test</description_short>

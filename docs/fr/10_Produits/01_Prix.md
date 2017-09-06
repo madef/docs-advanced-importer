@@ -1,7 +1,7 @@
 Le prix se définit à partir de la balise « price ».
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <price>10</price>
     </product>
@@ -10,8 +10,8 @@ Le prix se définit à partir de la balise « price ».
 
 Sans précision supplémentaire, le prix est le prix hors taxe. Si le prix est le prix ttc alors il est nécéssaire de définir le régle de taxe utilisée (via son id) et de rajouter l'attribut « tax » avec la valeur « include ».
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <price tax="include">10</price>
         <id_tax_rules_group>1</id_tax_rules_group>
@@ -21,8 +21,8 @@ Sans précision supplémentaire, le prix est le prix hors taxe. Si le prix est l
 
 Il est possible de définir le prix d'achat :
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <price>10</price>
         <wholesale_price>3.45</wholesale_price>
@@ -32,8 +32,8 @@ Il est possible de définir le prix d'achat :
 
 De la même manière que pour le prix, ce prix est concidéré hors tax. S'il est avec taxe, il faudra rajouter l'attribut « tax » avec la valeur « include » :
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <price tax="include">10</price>
         <wholesale_price tax="include" >3.45</wholesale_price>
@@ -44,8 +44,8 @@ De la même manière que pour le prix, ce prix est concidéré hors tax. S'il es
 
 Si le produit peut être frationné, vous pouvez définir le prix de l'unité. Le prix total correspont au prix avec toutes les unités :
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <price>10</price>
         <unitprice>1</unitprice>
@@ -56,8 +56,8 @@ Si le produit peut être frationné, vous pouvez définir le prix de l'unité. L
 
 De la même manière que pour pour le prix, le prix unitaire est concidéré hors tax. S'il est avec taxe, il faudra rajouter l'attribut « tax » avec la valeur « include » :
 ```
-<advancedimporter supplier-reference="test">
-    <product>
+<advancedimporter>
+    <product supplier-reference="test">
         <name>test</name>
         <price tax="include">10</price>
         <unitprice tax="include">1</unitprice>
