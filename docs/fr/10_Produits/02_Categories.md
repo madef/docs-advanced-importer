@@ -15,6 +15,27 @@ Voici un exemple de catégories qui sera une fille de la catégorie « accueil�
 
 ### Image
 
+Pour télécharger une image depuis une URL et la rattacher à une catégorie, on utilise le nœud « image » :
+```
+<advancedimporter>
+    <category supplier-reference="category1">
+        <name>catégorie</name>
+        <image>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</image>
+    </category>
+</advancedimporter>
+``` 
+
+Il est aussi possible de récupérer l'image sur le disque local :
+```
+<advancedimporter>
+    <category supplier-reference="category1">
+        <name>catégorie</name>
+        <image>/fr/numbers/number-1.jpg</image>
+    </category>
+</advancedimporter>
+``` 
+
+
 
 ### Lien entre les catégories
 
