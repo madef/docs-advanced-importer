@@ -48,3 +48,36 @@ Ou sans imbrication :
     </featureValue>
 </advancedimporter>
 ```
+
+Enfin il est possible de rattacher des valeurs de caractéristiques à un produit :
+```
+<advancedimporter>
+    <product supplier-reference="test">
+        <name>test</name>
+        <price>10</price>
+        <feature>
+            <name>material</name>
+            <featureValue>
+                <value>coton</value>
+            </featureValue>
+        </feature>
+    </product>
+</advancedimporter>
+```
+
+Ou sans imbrication :
+```
+<advancedimporter>
+    <feature>
+        <name>material</name>
+    </feature>
+    <product supplier-reference="test">
+        <name>test</name>
+        <price>10</price>
+        <featureValue>
+            <id_feature supplier-reference="feature">material</id_feature>
+            <value>wool</value>
+        </featureValue>
+    </product>
+</advancedimporter>
+```
