@@ -1,7 +1,7 @@
 Les caractéristiques des produits se défnisent au moyen des nœuds « feature » et « featureValue ». Il est possible de créer les caractèristiques seules :
 
 ```
-<advancedimporter">
+<advancedimporter>
     <feature>
         <name>material</name>
     </feaure>
@@ -10,7 +10,7 @@ Les caractéristiques des produits se défnisent au moyen des nœuds « feature
 
 Par défaut, le nom de la caractéristique est utilisé comme référence fournisseur. Mais il est recommandé de définir la référence fournisseur sourtout si votre flux est multilangue:
 ```
-<advancedimporter">
+<advancedimporter>
     <feature supplier-reference="material">
         <name>material</name>
     </feaure>
@@ -19,7 +19,7 @@ Par défaut, le nom de la caractéristique est utilisé comme référence fourni
 
 Ensuite il est possible d'ajouter des valeurs à cette caractéristique. Cela est possible par imbrication :
 ```
-<advancedimporter">
+<advancedimporter>
     <feature>
         <name>material</name>
         <featureValue>
@@ -34,7 +34,7 @@ Ensuite il est possible d'ajouter des valeurs à cette caractéristique. Cela es
 
 Ou sans imbrication :
 ```
-<advancedimporter">
+<advancedimporter>
     <feature>
         <name>material</name>
     </feaure>

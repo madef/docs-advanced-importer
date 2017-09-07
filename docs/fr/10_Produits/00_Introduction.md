@@ -2,7 +2,7 @@ L'import de produits s'effectue au moyen de la balise « product ».
 
 Voici un exemble de flux basique :
 ```
-<advancedimporter">
+<advancedimporter>
     <product>
         <name>test</name>
         <price>10</price>
