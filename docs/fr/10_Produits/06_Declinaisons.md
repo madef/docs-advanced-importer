@@ -19,7 +19,7 @@ Ce flux permet de créer un produit avec deux tailles différentes.
                     <position>1</position>
                 </attribute>
             </attributeGroup>
-        <combination>
+        </combination>
         <combination supplier-reference="test-size-m">
             <price>15</price>
             <attributeGroup supplier-reference="size">
@@ -33,7 +33,7 @@ Ce flux permet de créer un produit avec deux tailles différentes.
                     <position>1</position>
                 </attribute>
             </attributeGroup>
-        <combination>
+        </combination>
         <combination supplier-reference="test-size-l">
             <price>15</price>
             <attributeGroup supplier-reference="size">
@@ -47,7 +47,7 @@ Ce flux permet de créer un produit avec deux tailles différentes.
                     <position>1</position>
                 </attribute>
             </attributeGroup>
-        <combination>
+        </combination>
     </product>
 </advancedimporter>
 ```
