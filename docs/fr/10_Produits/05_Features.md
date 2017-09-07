@@ -4,7 +4,7 @@ Les caractéristiques des produits se défnisent au moyen des nœuds « feature
 <advancedimporter>
     <feature>
         <name>material</name>
-    </feaure>
+    </feature>
 </advancedimporter>
 ```
 
@@ -13,7 +13,7 @@ Par défaut, le nom de la caractéristique est utilisé comme référence fourni
 <advancedimporter>
     <feature supplier-reference="material">
         <name>material</name>
-    </feaure>
+    </feature>
 </advancedimporter>
 ```
 
@@ -28,7 +28,7 @@ Ensuite il est possible d'ajouter des valeurs à cette caractéristique. Cela es
         <featureValue>
             <value>wool</value>
         </featureValue>
-    </feaure>
+    </feature>
 </advancedimporter>
 ```
 
@@ -37,7 +37,7 @@ Ou sans imbrication :
 <advancedimporter>
     <feature>
         <name>material</name>
-    </feaure>
+    </feature>
     <featureValue>
         <id_feature supplier-reference="feature">material</id_feature>
         <value>coton</value>
