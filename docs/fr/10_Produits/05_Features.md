@@ -81,3 +81,36 @@ Ou sans imbrication :
     </product>
 </advancedimporter>
 ```
+
+Si on passe le flux suivant, on remarque aue le produit garde ses caratéristiques précédement ajoutées :
+```
+<advancedimporter>
+    <product supplier-reference="test">
+        <name>test</name>
+        <price>10</price>
+        <feature>
+            <name>material 2</name>
+            <featureValue>
+                <value>coton 2</value>
+            </featureValue>
+        </feature>
+    </product>
+</advancedimporter>
+```
+
+Pour ne garder que les nouvelles caractéristique, il faut rajouter le paramettre « remove-missing-features » :
+
+```
+<advancedimporter>
+    <product supplier-reference="test" remove-missing-features="yes">
+        <name>test</name>
+        <price>10</price>
+        <feature>
+            <name>material 2</name>
+            <featureValue>
+                <value>coton 2</value>
+            </featureValue>
+        </feature>
+    </product>
+</advancedimporter>
+```
