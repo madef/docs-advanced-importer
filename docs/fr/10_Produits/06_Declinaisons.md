@@ -91,10 +91,8 @@ Pour définir les images des déclinaisons, on utilise la même balise que pour 
         <combination supplier-reference="test-size-l">
             <price>15</price>
             <image>
-                <url>
-                    <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
-                    <legend>My image</legend>
-                </url>
+                <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+                <legend>My image</legend>
             </image>
             <attributeGroup supplier-reference="size">
                 <is_color_group>0</is_color_group>
