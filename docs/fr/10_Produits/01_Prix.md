@@ -1,4 +1,4 @@
-Le prix se définit à partir de la balise « price ».
+Le prix se définit à l'aide de la balise « price ».
 ```
 <advancedimporter>
     <product supplier-reference="test">
