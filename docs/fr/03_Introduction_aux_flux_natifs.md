@@ -133,6 +133,16 @@ Voici un exemple de modification de produit à partir de sa référence :
 
 Si la référence fournisseur est optionnelle, il est recommandé de la définir afin que le module l'enrenregistre et ainsi amméliorer la rapidité des futures modifications.
 
+Si c'est une balise à l'intérieur d'une entité, elle s'utilisera en précisant le type de l'entité cible de la manière suivante :
+```
+<advancedimporter>
+    <tag supplier-reference="test">
+        <name>test</name>
+        <id_lang identifier="iso_code" type="language">en</id_lang>
+    </tag>
+</advancedimporter>
+```
+
 ## Suppression
 
 La supressions des éléments se fait en ajoutant l'attribut « delete="1" » :
