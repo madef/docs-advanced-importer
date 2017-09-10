@@ -1,7 +1,6 @@
-Pour traiter plusieurs langues, il faut préciser dans la balise du champs le code iso de la langue.
+Pour traiter plusieurs langues, il faut préciser dans la balise du champ le code iso de la langue.
 
 Voici un exemple de création de produit en anglais et français :
-
 ```
 <advancedimporter>
     <product supplier-reference="demo-1">
@@ -13,7 +12,6 @@ Voici un exemple de création de produit en anglais et français :
 ```
 
 Si plus tard, un autre flux ne contient plus l'attribut "lang" alors le champ sera le même dans toutes les langues :
-
 ```
 <advancedimporter>
     <product supplier-reference="demo-1">

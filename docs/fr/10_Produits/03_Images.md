@@ -12,7 +12,7 @@ Pour ajouter une image à un produit, on utilise le nœud « image » :
 </advancedimporter>
 ```
 
-L'image peut provenir d'une URL comme dans le précédent exemple, ou du serveur lui même :
+L'image peut provenir d'une URL comme dans le précédent exemple, ou du serveur lui-même :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -26,7 +26,7 @@ L'image peut provenir d'une URL comme dans le précédent exemple, ou du serveur
 </advancedimporter>
 ```
 
-Si vous avez essayé les deux exemple précédent, vous remarquerez que le produit à maintenant deux image. Si votre flux liste l'intégralité des image du produit, il est possible de supprimer les images manquantes avec l'attribut « remove-missing-images » :
+Si vous avez essayé les deux exemples précédents, vous remarquerez que le produit a maintenant deux images. Si votre flux liste l'intégralité des images du produit, il est possible de supprimer les images manquantes avec l'attribut « remove-missing-images » :
 ```
 <advancedimporter>
     <product supplier-reference="test" remove-missing-images="yes">
@@ -100,7 +100,7 @@ Enfin il est possible de définir quelle image utiliser comme couverture :
 
 ## Optimisation
 
-Le téléchargement des image peut être long et est souvant la cause de lenteur d'importation. Afin d'éviter de télécharger des images déjà présentes, il est recommandé d'utiliser l'attribute « mode » avec pour valeur « create ». Ainsi, seules les images déjà non existante (url inconnnue) seront téléchargée.
+Le téléchargement des images peut être long et est souvent la cause de lenteur d'importation. Afin d'éviter de télécharger des images déjà présentes, il est recommandé d'utiliser l'attribut « mode » avec pour valeur « create ». Ainsi, seules les images déjà non existantes (url inconnnue) seront téléchargées.
 
 ```
 <advancedimporter>

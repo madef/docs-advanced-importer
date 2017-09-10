@@ -1,4 +1,4 @@
-Dans PrestaShop il existe deux type de stock. Le stock classique et le stock avancé. PrestaShop Advanced Importer sait gérer les deux cas.
+Dans PrestaShop il existe deux types de stock. Le stock classique et le stock avancé. PrestaShop Advanced Importer sait gérer les deux cas.
 
 ## Stock classique
 
@@ -50,7 +50,7 @@ Si votre flux comporte un différentiel de prix et non un stock absolu, il est p
 </advancedimporter>
 ```
 
-Si le stock est celui d'une déclinaison, alors il faut la préciser de la même manière que pour le produit avec le nœud « combination ». Dans ce cas le nœud « product » est optionnel :
+Si le stock est celui d'une déclinaison, alors il faut le préciser de la même manière que pour le produit avec le nœud « combination ». Dans ce cas le nœud « product » est optionnel :
 ```
 <advancedimporter>
     <stock>
@@ -61,22 +61,22 @@ Si le stock est celui d'une déclinaison, alors il faut la préciser de la même
 ```
 ## Stock avancé
 
-Attention : la gestion avancée des stocks n'existant plus sur PrestaShop 1.7, cette partie n'est pas testée et aucune aide et garantie ne sera fourni sur la gestion des stocks.
+Attention : la gestion avancée des stocks n'existant plus sur PrestaShop 1.7, cette partie n'est pas testée et aucune aide ni garantie ne seront fournies sur la gestion des stocks.
 
-L'utilisation du stock avancé est similaire au stock classique. Deux attributs obligatoires sont à rajouter :
- - warehouse : identifiant de l'entrepot
+L'utilisation du stock avancé est similaire au stock classique. Trois attributs obligatoires sont à rajouter :
+ - warehouse : identifiant de l'entrepôt
  - usable : est-ce du stock utilisable ?
  - price : est-ce du stock utilisable ?
 
 Les attributs suivants sont optionnels :
- - location : place dans l'entrepot
- - employee : identifiant de l'employée (defaut : 1)
+ - location : place dans l'entrepôt
+ - employee : identifiant de l'employé (defaut : 1)
  - currency : monnaie (default : monnaie de base)
  - reason : identifiant de la raison du mouvement de stock (default : 1)
 
 ## Imbrication dans le flux produit
 
-Si vous importez le produit et les stocks, il sera plus simple est rapide d'imbriquer le stock dans le produit. Dans ce cas, la balise « product » n'est plus utile :
+Si vous importez le produit et les stocks, il sera plus simple et rapide d'imbriquer le stock dans le produit. Dans ce cas, la balise « product » n'est plus utile :
 ```
 <advancedimporter>
     <product supplier-reference="test">

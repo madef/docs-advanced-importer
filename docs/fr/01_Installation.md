@@ -4,13 +4,13 @@ L'installation du module s'effectue de manière standard :
 - via l'interface addons
 - depuis le panel d'administration
 
-L'installation par FTP est possible, mais n'est pas recommendée à cause de problème de droits qui peuvent se produire.
+L'installation par FTP est possible, mais n'est pas recommandée à cause des problèmes de droits qui peuvent se produire.
 
 Nous ne détaillerons pas l'installation depuis addons.
 
-Pour installer le module à partir de l'archive. Rendez-vous dans l'onglet « module » depuis le panel d'administration.
+Pour installer le module à partir de l'archive, rendez-vous dans l'onglet « module » depuis le panel d'administration.
 
-Cliquez sur le bouton « ajouter » (bouton « + »). Un formulaire devrait apparaitre :
+Cliquez sur le bouton « ajouter » (bouton « + »), un formulaire devrait apparaitre :
 
 ![image alt text](media/image_0.png)
 
@@ -18,7 +18,7 @@ Choisissez l’archive zip du module puis cliquez sur le bouton « Charger le mo
 
 Un message vous informe que le module est téléchargé.
 
-Dans la recherche des modules recherchez « importer » puis cliquez sur le bouton « installer ».
+Dans la recherche des modules, recherchez « importer » puis cliquez sur le bouton « installer ».
 
 ![image alt text](media/image_1.png)
 
@@ -26,7 +26,7 @@ Dans le menu une nouvelle entrée fait son apparition :
 
 ![image alt text](media/image_2.png)
 
-Le module est maintenant installé. Il nous reste plus qu’à l’activer.
+Le module est maintenant installé. Il ne vous reste plus qu’à l’activer.
 
 ## Activer le Smart Cron
 
@@ -38,7 +38,7 @@ Si vous avez un environnement de préproduction accessible depuis l’extérieur
 
 Depuis un environnement local, le module fonctionnera en mode dégradé. Ce mode est suffisant pour faire des tests mais ne permet pas d’effectuer des tâches récurrentes.
 
-Pour activer le module aller dans "Configuration" du menu plus haut. Renseigner le champ « Référence de commande » avec le numéro de votre commande et activez l’api « smart cron ».
+Pour activer le module allez dans "Configuration" du menu plus haut, renseignez le champ « Référence de commande » avec le numéro de votre commande et activez l’api « smart cron ».
 
 ![image alt text](media/image_3.png)
 
@@ -56,8 +56,6 @@ Téléchargez le flux via le formulaire :
 
 Après quelques minutes un nouveau produit devrait être présent.
 
-Si vous n'avez pas activé le smartcron, alors il faudra entrer dans un nouvel onglet du navigateur l’url suivante : [http://localhost/prestashop/modules/advancedimporter/cron.php?debug](http://localhost/prestashop/modules/advancedimporter/cron.php?debug)
+Si vous n'avez pas activé le smartcron, alors il faudra rafraichir à plusieurs reprise la page « Flux » depuis votre interface d'administration.
 
-"localhost" et “prestashop” de l’url sont à adapter en fonction de votre configuration. [http://localhost/prestashop/](http://localhost/prestashop/) étant l’url de la page d’accueil de votre boutique.
-
-Si le produit n'est pas créé, contatez [notre support](https://addons.prestashop.com/fr/contactez-nous?id_product=7951).
+Si le produit n'est pas créé, contactez [notre support](https://addons.prestashop.com/fr/contactez-nous?id_product=7951).

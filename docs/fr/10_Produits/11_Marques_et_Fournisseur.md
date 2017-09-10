@@ -1,4 +1,4 @@
-L'importation de marques ou de fabricants d'un produit ce fait au moyen du nœud manufacturer :
+L'importation de la marque ou du fabriquant d'un produit se fait au moyen du nœud manufacturer :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -11,10 +11,10 @@ L'importation de marques ou de fabricants d'un produit ce fait au moyen du nœud
     </product>
 </advancedimporter>
 ```
-Veuillez noter que le produit ne peut avoir qu'une seule marque. Si il y'a plusieur fabricants, seul le dernier sera pris en compte.
+Veuillez noter que le produit ne peut avoir qu'une seule marque. S'il y a plusieurs fabriquants, seul le dernier sera pris en compte.
 
 
-L'importation des fournisseurs d'un produit ce fait au moyen du nœud supplier:
+L'importation des fournisseurs d'un produit se fait au moyen du nœud supplier :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -44,7 +44,7 @@ Si le produit possède plusieurs fournisseurs, il faut les ajouter comme dans ce
 </advancedimporter>
 ```
 
-Enfin, il est possible de définir de prix d'achat du produit chez le fournisseur ainsi que sa référence :
+Enfin, il est possible de définir le prix d'achat du produit chez le fournisseur ainsi que sa référence :
 ```
 <advancedimporter>
     <product supplier-reference="test">

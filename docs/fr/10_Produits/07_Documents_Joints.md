@@ -9,7 +9,7 @@ La création de documents joints s'effectue à l'aide de la balise « attachmen
 </advancedimporter>
 ```
 
-Il est possible rattacher le document à un produit en l'imbricant dans la balise produit :
+Il est possible de rattacher le document à un produit en l'imbriquant dans la balise produit :
 ```
 <advancedimporter>
     <product supplier-reference="test">

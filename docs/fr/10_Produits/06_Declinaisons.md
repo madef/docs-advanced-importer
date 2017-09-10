@@ -1,4 +1,4 @@
-Les déclinaisons permettent de définir les variations possibles d'un produit. Par exemple en listant des références de tailles et couleurs différentes. Ces déclinaisons ont leur propre stock et leur propre prix et propres images.
+Les déclinaisons permettent de définir les variations possibles d'un produit, par exemple en listant des références de tailles et couleurs différentes. Ces déclinaisons ont leur propre stock et leur propre prix et leurs propres images.
 
 Ce flux permet de créer un produit avec deux tailles différentes.
 ```
@@ -54,8 +54,8 @@ Ce flux permet de créer un produit avec deux tailles différentes.
 
 ## Prix
 
-Si la déclinaison est créée sans être imbriquée dans le produit, alors la balise « price » indique l'impact sur prix du produit. Par exemple si le produit est à 10€ et la déclinaison à 12€ alors le prix de la déclinaison sera de 22€. Si la déclinaison est créée avec une imbrication comme dans l'exemple précédent, alors le prix sera le prix final.
-Le prixx attendu est le prix hors taxe. Avec l'imbriquation dans un produit, il est possible de donner le prix taxé :
+Si la déclinaison est créée sans être imbriquée dans le produit, alors la balise « price » indique l'impact sur le prix du produit. Par exemple si le produit est à 10€ et la déclinaison à 12€ alors le prix de la déclinaison sera de 22€. Si la déclinaison est créée avec une imbrication comme dans l'exemple précédent, alors le prix sera le prix final (donc 12).
+Le prix attendu est hors taxe. Avec l'imbriquation dans un produit, il est possible de donner le prix taxé :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -82,7 +82,7 @@ Le prixx attendu est le prix hors taxe. Avec l'imbriquation dans un produit, il 
 
 ## Images
 
-Pour définir les images des déclinaisons, on utilise la même balise que pour le produit. L'image sera ajoutée au produit et sélectionné pour la déclinaison :
+Pour définir les images des déclinaisons, on utilise la même balise que pour le produit. L'image sera ajoutée au produit et sélectionnée pour la déclinaison :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -112,7 +112,7 @@ Pour définir les images des déclinaisons, on utilise la même balise que pour 
 
 ## Suppression des déclinaisons manquantes
 
-Par défaut, les déclinaisons manquantes du flux ne seront pas supprimées. Pour corriger cela, il est possible d'utiliser l'auto-delete dont vous retrouverez le fonctionnement dans le chapitre [Introduction aux flux natifs](!fr/Introduction_aux_flux_natifs). Aussi il est possible dans le flux produit de rajouter l'attribut « remove-missing-combinations » :
+Par défaut, les déclinaisons manquantes du flux ne seront pas supprimées. Pour changer cela, il est possible d'utiliser l'auto-delete dont vous retrouverez le fonctionnement dans le chapitre [Introduction aux flux natifs](!fr/Introduction_aux_flux_natifs). Aussi il est possible dans le flux produit de rajouter l'attribut « remove-missing-combinations » :
 ```
 <advancedimporter>
     <product supplier-reference="test" remove-missing-combinations="yes">
@@ -138,4 +138,4 @@ Par défaut, les déclinaisons manquantes du flux ne seront pas supprimées. Pou
 
 ## Informations diverses
 
-Si une déclinaison (combination) est modifiée sans attribut ou avec un attribut manquant, alors la déclinaison perdra tous ces attributs ou celui qui est manquant. Il est donc nécéssaire de redéclarer systématiquement tout les attrubuts d'une déclinaison.
+Si une déclinaison (combination) est modifiée sans attribut ou avec un attribut manquant, alors la déclinaison perdra tous ces attributs ou celui qui est manquant. Il est donc nécéssaire de déclarer systématiquement tous les attrubuts d'une déclinaison.

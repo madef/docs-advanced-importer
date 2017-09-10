@@ -8,7 +8,7 @@ Le prix se définit à l'aide de la balise « price ».
 </advancedimporter>
 ```
 
-Sans précision supplémentaire, le prix est le prix hors taxe. Si le prix est le prix ttc alors il est nécéssaire de définir le régle de taxe utilisée (via son id) et de rajouter l'attribut « tax » avec la valeur « include ».
+Sans précision supplémentaire, le prix est hors taxe. Si le prix est ttc alors il est nécéssaire de définir la régle de taxe utilisée (via son id) et de rajouter l'attribut « tax » avec la valeur « include ».
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -30,7 +30,7 @@ Il est possible de définir le prix d'achat :
 </advancedimporter>
 ```
 
-De la même manière que pour le prix, ce prix est concidéré hors tax. S'il est avec taxe, il faudra rajouter l'attribut « tax » avec la valeur « include » :
+De la même manière que pour le prix, ce prix est considéré hors taxe. S'il est avec taxe, il faudra rajouter l'attribut « tax » avec la valeur « include » :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -42,7 +42,7 @@ De la même manière que pour le prix, ce prix est concidéré hors tax. S'il es
 </advancedimporter>
 ```
 
-Si vous souhaitez afficher le prix unitaire du produit (ex prix au kg), il est possible définir le prix de l'unité. Voici un exemple avec un produit de 10kg dont le kg est vendu 1 euro :
+Si vous souhaitez afficher le prix unitaire du produit (ex prix au kg), il est possible de définir le prix de l'unité. Voici un exemple avec un produit de 10kg dont le kg est vendu 1 euro :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -54,7 +54,7 @@ Si vous souhaitez afficher le prix unitaire du produit (ex prix au kg), il est p
 </advancedimporter>
 ```
 
-De la même manière que pour pour le prix, le prix unitaire est concidéré hors tax. S'il est avec taxe, il faudra rajouter l'attribut « tax » avec la valeur « include » :
+De la même manière que pour le prix, le prix unitaire est considéré hors taxe. S'il est avec taxe, il faudra rajouter l'attribut « tax » avec la valeur « include » :
 ```
 <advancedimporter>
     <product supplier-reference="test">

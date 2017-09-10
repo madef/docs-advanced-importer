@@ -39,7 +39,7 @@ Il est aussi possible de récupérer l'image sur le disque local :
 
 ### Lien entre les catégories
 
-Il est possible de lier des catégories entre-elles au moyen de l'imprication :
+Il est possible de lier des catégories entre elles au moyen de l'imbrication :
 ```
 <advancedimporter>
     <category supplier-reference="category1">
@@ -51,7 +51,7 @@ Il est possible de lier des catégories entre-elles au moyen de l'imprication :
 </advancedimporter>
 ``` 
 
-Il est possible de lier des catégories entre-elles sans imbrication :
+Il est possible de lier des catégories entre elles sans imbrication :
 ```
 <advancedimporter>
     <category supplier-reference="category1">
@@ -148,12 +148,11 @@ Il est aussi possible de déclarer la sous-categorie à deux reprises :
 
 ## Nœud « categorypath »
 
-Categorypath est plus simple d'utilisation, mais ne permet pas de nombreuse fonctionnalité. Par exemple, il ne sait pas gérer les langues ou les références fournisseurs et ne peux être utilisé que depuis un produit.
+Categorypath est plus simple d'utilisation, mais ne permet pas de nombreuses fonctionnalités. Par exemple, il ne sait pas gérer les langues ou les références fournisseurs et ne peut être utilisé que depuis un produit.
 
-Il faut prenièrement déterminé quel est le séparateur utilisé. Ce dernier, permet des séparer les catégories des sous catégories. Par exemple dans « Femme, Robe, Été », le séparateur est « , ».
+Il faut premièrement déterminer quel est le séparateur utilisé. Ce dernier permet de séparer les catégories des sous-catégories. Par exemple dans « Femme, Robe, Été », le séparateur est « , ».
 
-Ce dernier doit être bien choisis. En effet, si une catégorie se nomme « T-shirt, Haut », la virgule sera considérée comme un séparateur. Il n'est pas possible d'échaper les symboles identiques au séparateur.
-
+Ce dernier doit être bien choisi. En effet, si une catégorie se nomme « T-shirt, Haut », la virgule sera considérée comme un séparateur. Il n'est pas possible d'échapper les symboles identiques au séparateur.
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -164,10 +163,9 @@ Ce dernier doit être bien choisis. En effet, si une catégorie se nomme « T-s
 </advancedimporter>
 ```
 
-## Supprimer les liens entre produits et catégories non défini dans le flux
+## Supprimer les liens manquants entre produits et catégories
 
-Le passage de ces deux flux successifs, vont faire que le produit sera rattaché à #category1 et #category2 :
-
+Le passage de ces deux flux successifs, rattachera le produit à #category1 et #category2 :
 ```
 <advancedimporter>
     <category supplier-reference="category1">

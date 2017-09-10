@@ -6,8 +6,7 @@ La balise racine est toujours **advancedimporter**
 
 La balise de second niveau est le nom de la classe PHP de l'entité : product, category, order, customer, …
 
-Enfin les balises de troisième niveau sont les attributs. Par exemple on créera un produit nommé **test** avec ce flux :
-
+Enfin les balises de troisième niveau sont les attributs. Par exemple nous créons un produit nommé **test** avec ce flux :
 ```
 <advancedimporter>
     <product>
@@ -18,7 +17,6 @@ Enfin les balises de troisième niveau sont les attributs. Par exemple on créer
 ```
 
 Et de même pour une catégorie nommée **test** :
-
 ```
 <advancedimporter>
     <category>
@@ -28,7 +26,6 @@ Et de même pour une catégorie nommée **test** :
 ```
 
 Il est possible de créer les deux dans le même flux :
-
 ```
 <advancedimporter>
     <product>
@@ -42,7 +39,6 @@ Il est possible de créer les deux dans le même flux :
 ```
 
 ## Imbrications
-
 Les entités sont parfois liées entre elles. Par exemple pour intégrer une catégorie et sa sous-catégorie :
 
 ```
@@ -57,8 +53,6 @@ Les entités sont parfois liées entre elles. Par exemple pour intégrer une cat
 ```
 
 Ou encore pour lier le produit à la sous-catégorie :
-
-
 ```
 <advancedimporter>
     <product>
@@ -74,16 +68,15 @@ Ou encore pour lier le produit à la sous-catégorie :
 </advancedimporter>
 ```
 
-## Références fourniseurs
+## Références fournisseurs
 
-Si vous aviez exécuté les flux plusieurs fois alors vous avez dû remarquer que les entités ont été dupliquées.
+Si vous avez exécuté les flux plusieurs fois alors vous avez dû remarquer que les entités ont été dupliquées.
 
 Pour éviter cela, il faut identifier les entités au moyen de la référence fournisseur :
 
 ### Déclaration
 
 Voici un exemple de déclaration d'un produit avec un référence fournisseur :
-
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -94,8 +87,6 @@ Voici un exemple de déclaration d'un produit avec un référence fournisseur :
 ```
 
 Notez que la référence fournisseur est spécifique au type de l'entité. Vous pouvez donc utiliser la référence fournisseur « test » pour un produit et une catégorie :
-
-
 ```
 <advancedimporter>
     <category supplier-reference="test">
@@ -106,9 +97,8 @@ Notez que la référence fournisseur est spécifique au type de l'entité. Vous 
 
 ### Réutilisation
 
-Il est parfois utile de pouvoir pour lier des produits entre-eux d'utiliser la référence fournisseur.
-Pour cela, on rajoute l'attributs « supplier-reference » avec comme valeur le type de l'entité :
-
+Il est parfois utile pour pouvoir lier des produits entre-eux d'utiliser la référence fournisseur.
+Pour cela, on rajoute l'attribut  « supplier-reference » avec comme valeur le type de l'entité :
 ```
 <advancedimporter>
     <category supplier-reference="category2">
@@ -131,7 +121,7 @@ Voici un exemple de modification de produit à partir de sa référence :
 </advancedimporter>
 ```
 
-Si la référence fournisseur est optionnelle, il est recommandé de la définir afin que le module l'enrenregistre et ainsi amméliorer la rapidité des futures modifications.
+Si la référence fournisseur est optionnelle, il est quand même recommandé de la définir afin que le module l'enrenregistre. Cela permet ainsi d'améliorer la rapidité des futures modifications.
 
 Si c'est une balise à l'intérieur d'une entité, elle s'utilisera en précisant le type de l'entité cible de la manière suivante :
 ```
@@ -166,7 +156,7 @@ Les attributs sont alors optionels :
 
 ## Suppression des manquants
 
-Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « auto-delete » dans la balise racine. Cet attribut doit avoir comme paramettre le nom du fournisseur. Seules les entités importées avec le module et ayant une reférence fournisseur peuvent être supprimés automatiquement.
+Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « auto-delete » dans la balise racine. Cet attribut doit avoir comme paramètre le nom du fournisseur. Seules les entités importées avec le module et ayant une reférence fournisseur peuvent être supprimées automatiquement.
 
 Premier flux, création de « test 1 » et  « test 2 » :
 ```
@@ -191,4 +181,4 @@ Second flux, suppression de « test 2 » :
     </product>
 </advancedimporter>
 ```
-Attention, avec l'auto-delete le flux intégré doivent être complet sans quoi des produits seront effacés de façon définitive.
+ttention, avec l'auto-delete le flux intégré doit être complet sans quoi des produits seront effacés de façon définitive.

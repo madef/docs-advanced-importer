@@ -1,7 +1,6 @@
 Pour gérer l'enregistrement en multiboutique, il faut préciser dans le tag racine de l'entité l'id de la boutique.
 
 Par exemple si vous souhaitez importer un produit dans le store 2 et 3 seulement, vous procéderez de la manière suivante :
-
 ```
 <advancedimporter>
     <product shop="2" supplier-reference="demo-1">
@@ -16,7 +15,6 @@ Par exemple si vous souhaitez importer un produit dans le store 2 et 3 seulement
 ```
 
 Si vous souhaitez avoir un nom de produit différent pour chacune des boutiques, vous procéderez de la manière suivante :
-
 ```
 <advancedimporter>
     <product shop="2" supplier-reference="demo-1">
@@ -30,8 +28,7 @@ Si vous souhaitez avoir un nom de produit différent pour chacune des boutiques,
 </advancedimporter>
 ```
 
-Attention, la boutique par défaut du produit, sera toujours celle de la première boutique définit dans le flux. Dans notre cas c'est la boutique 2. Si on souhaite l'inverse, il faut que le flux ressemble à :
-
+Attention, la boutique par défaut du produit sera toujours celle de la première boutique définie dans le flux. Dans notre cas c'est la boutique 2. Si on souhaite l'inverse, il faut que le flux ressemble à :
 ```
 <advancedimporter>
     <product shop="3" supplier-reference="demo-1">
@@ -45,10 +42,9 @@ Attention, la boutique par défaut du produit, sera toujours celle de la premiè
 </advancedimporter>
 ```
 
-Dans tous les exemples précédent, le produit n'est pas importé dans la boutique 1.
+Dans tous les exemples précédents, le produit n'est pas importé dans la boutique 1.
 
 Si vous souhaitez importer un produit dans toutes les boutiques alors il suffit de ne pas préciser la boutique :
-
 ```
 <advancedimporter>
     <product supplier-reference="demo-1">
@@ -58,8 +54,7 @@ Si vous souhaitez importer un produit dans toutes les boutiques alors il suffit 
 </advancedimporter>
 ```
 
-Si vous souhaitez importer un produit dans toutes les boutiques et le presonnaliser pour une seule alors il faut créer d'abbord le produit sur toutes les boutiques puis le modifier sur la boutique souhaitée :
-
+Si vous souhaitez importer un produit dans toutes les boutiques et le personnaliser pour une seule alors il faut créer d'abord le produit sur toutes les boutiques puis le modifier sur la boutique souhaitée :
 ```
 <advancedimporter>
     <product supplier-reference="demo-1">
@@ -74,7 +69,6 @@ Si vous souhaitez importer un produit dans toutes les boutiques et le presonnali
 ```
 
 Ceci ne marchera pas :
-
 ```
 <advancedimporter>
     <product shop="2" supplier-reference="demo-1">
@@ -88,9 +82,7 @@ Ceci ne marchera pas :
 </advancedimporter>
 ```
 
-Enfin passer un flux sans préciser les boutiques après avoir enregistré les produits dans des boutiques spécifique aura un effet innatendu. Il n'est donc pas recomandé de passer les deux flux suivant dans cette ordre :
-
-
+Enfin passer un flux sans préciser les boutiques après avoir enregistré les produits dans des boutiques spécifiques aura un effet inattendu. Il n'est donc pas recomandé de passer les deux flux suivants dans cet ordre :
 ```
 <advancedimporter>
     <product supplier-reference="demo-1">

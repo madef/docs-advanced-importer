@@ -1,4 +1,4 @@
-Les caractéristiques des produits se défnisent au moyen des nœuds « feature » et « featureValue ». Il est possible de créer les caractèristiques seules :
+Les caractéristiques des produits se définissent au moyen des nœuds « feature » et « featureValue ». Il est possible de créer les caractèristiques seules :
 
 ```
 <advancedimporter>
@@ -8,7 +8,7 @@ Les caractéristiques des produits se défnisent au moyen des nœuds « feature
 </advancedimporter>
 ```
 
-Par défaut, le nom de la caractéristique est utilisé comme référence fournisseur. Mais il est recommandé de définir la référence fournisseur sourtout si votre flux est multilangue:
+Par défaut, le nom de la caractéristique est utilisé comme référence fournisseur. Mais il est recommandé de définir la référence fournisseur surtout si votre flux est multilangue :
 ```
 <advancedimporter>
     <feature supplier-reference="material">
@@ -82,7 +82,7 @@ Ou sans imbrication :
 </advancedimporter>
 ```
 
-Si on passe le flux suivant, on remarque aue le produit garde ses caratéristiques précédement ajoutées :
+Si on passe le flux suivant, on remarque que le produit garde ses caratéristiques précédement ajoutées :
 ```
 <advancedimporter>
     <product supplier-reference="test">
@@ -98,7 +98,7 @@ Si on passe le flux suivant, on remarque aue le produit garde ses caratéristiqu
 </advancedimporter>
 ```
 
-Pour ne garder que les nouvelles caractéristique, il faut rajouter le paramettre « remove-missing-features » :
+Pour ne garder que les nouvelles caractéristiques, il faut rajouter le paramètre « remove-missing-features » :
 
 ```
 <advancedimporter>

@@ -1,5 +1,4 @@
-Les tags permettent de classer le produits autrement qu'avec les catégories. L'ajout et modification de tags, s'effectue au moyen de la balise tag :
-
+Les tags permettent de classer les produits autrement qu'avec les catégories. L'ajout et modification de tags, s'effectuent au moyen de la balise tag :
 ```
 <advancedimporter>
     <tag supplier-reference="test">
@@ -9,7 +8,7 @@ Les tags permettent de classer le produits autrement qu'avec les catégories. L'
 </advancedimporter>
 ```
 
-L'utilisation de l'identifiant numérique de la langue n'est pas idéal, il est possible d'utiliser le code iso dirrectement :
+L'utilisation de l'identifiant numérique de la langue n'est pas idéal, il est possible d'utiliser le code iso directement :
 ```
 <advancedimporter>
     <tag supplier-reference="test">
@@ -33,7 +32,7 @@ Pour associer un tag à un produit, on utilise l'imbrication :
 </advancedimporter>
 ```
 
-Par défaut les anciens tags du produit ne seront pas remplacé. Pour faire cela, il faut rajouter au produit l'attribute « remove-missing-tags » :
+Par défaut les anciens tags du produit ne seront pas remplacés. Pour cela, il faut rajouter au produit l'attribut « remove-missing-tags » :
 ```
 <advancedimporter>
     <product supplier-reference="test" remove-missing-tags="yes">

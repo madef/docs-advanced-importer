@@ -22,7 +22,7 @@ class AIXmlExtractor implements AIExtractorInterface
 
 ```
 
-L'extracteur CSV est plus complexe, il transforme les colonnes du CSV en XML. Le format de sortie resemble à cela :
+L'extracteur CSV est plus complexe, il transforme les colonnes du CSV en XML. Le format de sortie ressemble à cela :
 
 ```
 <csv>
@@ -43,7 +43,7 @@ L'extracteur doit être sélectionné lors de la création d'un nouveau modèle 
 
 ## Créer votre propre extracteur
 
-Si votre flux est un peu complèxe, il peut être utile de créer votre propre extracteur.
+Si votre flux est un peu complexe, il peut être utile de créer votre propre extracteur.
 
 Cela est particulièrement vrai, si vous avez besoin de faire appel à une API externe, si le format du flux est un format propriétaire ou plat, ou encore si votre flux fait référence à d'autres entitées PrestaShop sans utiliser un identifiant utilisable par le module.
 
@@ -79,7 +79,7 @@ class AICustomExtractor implements AIExtractorInterface
 
 ```
 
-Pour appliquer cet extracteur, il faut créer un nouveau modèle est sélectionner l'extracteur **Custom**.
+Pour appliquer cet extracteur, il faut créer un nouveau modèle et sélectionner l'extracteur **Custom**.
 Après cela il faudra importer votre flux en sélectionnant le nouveau template.
 
 

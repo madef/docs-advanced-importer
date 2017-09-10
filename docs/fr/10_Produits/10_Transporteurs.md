@@ -1,4 +1,4 @@
-Il est possible de déterminer des méthode de livraisons spécifiques pour un produit. Pour cela on utilise la balise « carrier » avec comme valeur l'identifiant du transporteur :
+Il est possible de déterminer des méthodes de livraison spécifiques pour un produit. Pour cela on utilise la balise « carrier » avec comme valeur l'identifiant du transporteur :
 ```
 <advancedimporter>
     <product supplier-reference="test">

@@ -23,7 +23,7 @@ Nativement, le module attend des flux produits avec des déclinaisons groupées.
 </items>
 ```
 
-Ce format est en fait assez rare. On retrouve plus fréquament deux autres format :
+Ce format est en fait assez rare. On retrouve plus fréquemment deux autres formats :
 * flux de déclinaisons
 * flux de produits et sous-produits (dans ce cas, le sous-produit est la déclinaison)
 
@@ -59,7 +59,7 @@ Dans le cas d'un flux de déclinaisons, il est conseillé de grouper ces dernier
 </items>
 ```
 
-Dans ce cas, la XSLT ressemblera à :
+Dans ce cas, la XSLT ressemblera à :
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
