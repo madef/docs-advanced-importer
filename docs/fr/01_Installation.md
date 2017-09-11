@@ -12,7 +12,7 @@ Pour installer le module à partir de l'archive, rendez-vous dans l'onglet « mo
 
 Cliquez sur le bouton « ajouter » (bouton « + »), un formulaire devrait apparaitre :
 
-![image alt text](media/image_0.png)
+![image alt text](media/install_1.png)
 
 Choisissez l’archive zip du module puis cliquez sur le bouton « Charger le module ».
 
@@ -20,13 +20,13 @@ Un message vous informe que le module est téléchargé.
 
 Dans la recherche des modules, recherchez « importer » puis cliquez sur le bouton « installer ».
 
-![image alt text](media/image_1.png)
+![image alt text](media/install_2.png)
 
 Dans le menu une nouvelle entrée fait son apparition :
 
-![image alt text](media/image_2.png)
+![image alt text](media/menu.png)
 
-Le module est maintenant installé. Il ne vous reste plus qu’à l’activer.
+Le module est maintenant installé. Il ne vous reste plus qu’à l’activer en allant dans la configuration du module.
 
 ## Activer le Smart Cron
 
@@ -48,13 +48,15 @@ Téléchargez le flux [suivant](!flow/check-install.xml)
 
 L’importation du backoffice se fait via l’onglet « Advanced Importer » > « Flux ». Ici cliquez sur le bouton « + » « Ajouter ».
 
-![image alt text](media/image_4.png)
+![image alt text](media/add-flow-1.png)
 
 Téléchargez le flux via le formulaire :
 
-![image alt text](media/image_5.png)
+![image alt text](media/add-flow-2.png)
 
 Après quelques minutes un nouveau produit devrait être présent.
+
+![image alt text](media/image_5.png)
 
 Si vous n'avez pas activé le smartcron, alors il faudra rafraichir à plusieurs reprise la page « Flux » depuis votre interface d'administration.
 
