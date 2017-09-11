@@ -33,6 +33,8 @@ This module can be used by small retailers as well as by large accounts, it is b
 
 * Refund if the module does'nt works
 * [Contact the developper](https://addons.prestashop.com/en/write-to-developper?id_product=7951)
+* [French PDF of the documentation](readme_fr.pdf)
+* [English PDF of the documentation](readme_en.pdf)
 
 </div>
 </div>
