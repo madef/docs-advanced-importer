@@ -19,7 +19,7 @@ Pour rajouter un fichier, on utilise l'entité ProductDownload :
         <price>10</price>
         <is_virtual>1</is_virtual>
         <productDownload>
-            <display_filename>Nom du fichier</display_filename>
+            <display_filename>Nom_du_fichier.pdf</display_filename>
             <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
         </productDownload>
     </product>
