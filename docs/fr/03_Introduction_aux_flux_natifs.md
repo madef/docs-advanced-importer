@@ -135,32 +135,31 @@ Si c'est une balise à l'intérieur d'une entité, elle s'utilisera en précisan
 
 ## Suppression
 
-La supressions des éléments se fait en ajoutant l'attribut « delete="1" » :
+La supressions des éléments se fait via le nœud « delete » :
 
 ```
 <advancedimporter>
-    <product supplier-reference="test" delete="1">
-        <name>test</name>
-        <price>10</price>
-    </product>
+    <delete supplier-reference="test" type="product"/>
 </advancedimporter>
 ```
 
-Les attributs sont alors optionels :
+## Désactivation
+
+De la même manière que pour la supression, il est possible de désactiver des entités :
 
 ```
 <advancedimporter>
-    <product supplier-reference="test" delete="1" />
+    <disable supplier-reference="test" type="product"/>
 </advancedimporter>
 ```
 
 ## Suppression des manquants
 
-Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « auto-delete » dans la balise racine. Cet attribut doit avoir comme paramètre le nom du fournisseur. Seules les entités importées avec le module et ayant une reférence fournisseur peuvent être supprimées automatiquement.
+Par defaut, l'absence d'une entité du flux ne fera pas qu'il sera supprimé. Pour ce faire, il faut rajouter l'attribut « delete-missing » dans la balise racine. Cet attribut doit avoir comme paramètre le nom du fournisseur. Seules les entités importées avec le module et ayant une reférence fournisseur peuvent être supprimées automatiquement.
 
 Premier flux, création de « test 1 » et  « test 2 » :
 ```
-<advancedimporter auto-delete="supplier">
+<advancedimporter delete-missing="supplier">
     <product supplier-reference="test1">
         <name>test 1</name>
         <price>10</price>
@@ -174,11 +173,37 @@ Premier flux, création de « test 1 » et  « test 2 » :
 
 Second flux, suppression de « test 2 » :
 ```
-<advancedimporter auto-delete="supplier">
+<advancedimporter delete-missing="supplier">
     <product supplier-reference="test1">
         <name>test 1</name>
         <price>10</price>
     </product>
 </advancedimporter>
 ```
-ttention, avec l'auto-delete le flux intégré doit être complet sans quoi des produits seront effacés de façon définitive.
+Attention, avec le delete-missing le flux intégré doit être complet sans quoi des produits seront effacés de façon définitive.
+
+## Désactivation des manquants
+
+Le delete-missing est assez violant, peut-être preférez vous désactiver les entités manquante. Dans ce cas, il faut rajouter utiliser l'attrubut « disable-missing ». Attention, delete-missing et disable-missing ne sont pas compatible entre-eux.
+```
+<advancedimporter disable-missing="supplier">
+    <product supplier-reference="test1">
+        <name>test 1</name>
+        <price>10</price>
+    </product>
+    <product supplier-reference="test2">
+        <name>test 2</name>
+        <price>10</price>
+    </product>
+</advancedimporter>
+```
+
+Second flux, suppression de « test 2 » :
+```
+<advancedimporter disable-missing="supplier">
+    <product supplier-reference="test1">
+        <name>test 1</name>
+        <price>10</price>
+    </product>
+</advancedimporter>
+```

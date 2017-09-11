@@ -112,7 +112,7 @@ Pour définir les images des déclinaisons, on utilise la même balise que pour 
 
 ## Suppression des déclinaisons manquantes
 
-Par défaut, les déclinaisons manquantes du flux ne seront pas supprimées. Pour changer cela, il est possible d'utiliser l'auto-delete dont vous retrouverez le fonctionnement dans le chapitre [Introduction aux flux natifs](!fr/Introduction_aux_flux_natifs). Aussi il est possible dans le flux produit de rajouter l'attribut « remove-missing-combinations » :
+Par défaut, les déclinaisons manquantes du flux ne seront pas supprimées. Pour changer cela, il est possible d'utiliser le delete-missing dont vous retrouverez le fonctionnement dans le chapitre [Introduction aux flux natifs](!fr/Introduction_aux_flux_natifs). Aussi il est possible dans le flux produit de rajouter l'attribut « remove-missing-combinations » :
 ```
 <advancedimporter>
     <product supplier-reference="test" remove-missing-combinations="yes">
