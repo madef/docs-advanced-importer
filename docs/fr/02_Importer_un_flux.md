@@ -16,7 +16,7 @@ S'il s'agit d'un flux produit alors il est possible d'utiliser l'assistant de cr
 
 ## Créer un modèle avec l'assistant
 
-Commencez par importer votre flux en cliquant sur le bouton « Ajouter » depuis la section « Flux » du sous menu « PrestaShop XML Importer ». De préférence, choisissez un flux plus petit ne contenant que peu de données. Plus le fichier sera petit, plus l'assistant sera rapide.
+Commencez par importer votre flux en cliquant sur le bouton « Ajouter » depuis la section « Flux » du sous menu « Advanced Importer ». De préférence, choisissez un flux plus petit ne contenant que peu de données. Plus le fichier sera petit, plus l'assistant sera rapide.
 
 Ensuite, il vous sera demandé de nommer le modèle. Si votre fichier est un XML, alors il vous sera demandé d'identifier la racine de chaque produit.
 
@@ -40,7 +40,7 @@ Si votre flux doit faire appel à une API externe, si le format du flux est dans
 
 ## Importer un flux manuellement
 
-Commencez par cliquer sur le bouton « Ajouter » depuis la section « Flux » du sous menu « PrestaShop XML Importer ». Premièrement, choississez le flux à importer. Ensuite, choississez le modèle à appliquer. Si le flux est au format natif, choisissez l'option « aucun ». Après cela, rendez-vous dans la section « Flux » du sous menu « Advanced Importer » pour suivre l'avancement de l'intégration du flux.
+Commencez par cliquer sur le bouton « Ajouter » depuis la section « Flux » du sous menu « Advanced Importer ». Premièrement, choississez le flux à importer. Ensuite, choississez le modèle à appliquer. Si le flux est au format natif, choisissez l'option « aucun ». Après cela, rendez-vous dans la section « Flux » du sous menu « Advanced Importer » pour suivre l'avancement de l'intégration du flux.
 
 ## Importer un flux automatiquement
 

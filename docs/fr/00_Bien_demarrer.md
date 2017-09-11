@@ -1,4 +1,4 @@
-PrestaShop XML & CSV Importer est un module d'import dimentionné pour les flux de taille importante.
+Advanced XML & CSV Importer est un module d'import dimentionné pour les flux de taille importante.
 Il est capable de gérer des flux de plusieurs centaines de Mo.
 
 Le module sait importer toutes les entités de PrestaShop (classes PHP héritant de ObjectModel).
