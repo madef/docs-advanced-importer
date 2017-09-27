@@ -1,8 +1,10 @@
 <p class="lead">
-	<strong>PrestaShop XML & CSV Importer</strong> is made to import all your CSV and XML. Import everything : products, combinations, categories, stocks, orders, customers, ...
+	<strong>Advanced XML & CSV Importer</strong> is made to import all your CSV and XML into your PrestaShop website. Import everything : products, combinations, categories, stocks, orders, customers, ...
 </p>
 
-PrestaShop XML Importer, is able to support flows containing thousands of entities (products, customers, stock movements, …).
+This documentation deals about the version 2 of the module. For the version 1, please refer to this [url](http://v1.prestashopxmlimporter.madef.fr/index.html). 
+
+Advanced Importer, is able to support flows containing thousands of entities (products, customers, stock movements, …).
 
 This module can be used by small retailers as well as by large accounts, it is built to be robust, quick and easy to use. 
 
