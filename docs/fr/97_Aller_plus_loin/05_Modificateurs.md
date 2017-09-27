@@ -1,11 +1,11 @@
-Les modificateurs permettent de modifier les valeurs d'un champ avec une méthode PHP. Il existe par défaut plusieurs modificateurs avec lequels ovus pourez entre-autre :
+Les modificateurs permettent de modifier les valeurs d'un champ avec une méthode PHP. Il existe par défaut plusieurs modificateurs avec lequels vous pourrez entre autre :
  * supprimer les espaces de début et fin de chaîne
  * augmenter le prix de N%
- * remplacer une paties d'une chaîne
+ * remplacer une partie d'une chaîne
 
 ## Fonction PHP
 
-Vous pouvez exécuter n'importe quelle fonction PHP. Par exemple si vous souhaitez retirer les espace de fin et début de chaîne :
+Vous pouvez exécuter n'importe quelle fonction PHP. Par exemple si vous souhaitez retirer les espaces de fin et début de chaîne :
 
 ```
 <advancedimporter>
@@ -17,7 +17,7 @@ Vous pouvez exécuter n'importe quelle fonction PHP. Par exemple si vous souhait
 </advancedimporter>
 ```
 
-Si vous souhaitez supprimer un autres caractères que les espaces :
+Si vous souhaitez supprimer un autre caractère que les espaces :
 ```
 <advancedimporter>
     <product external-reference="demo-1">
@@ -30,7 +30,7 @@ Si vous souhaitez supprimer un autres caractères que les espaces :
 
 ## Méthode du module
 
-### Opérations arithmetiques
+### Opérations arithmétiques
 
 ```
 <advancedimporter>
@@ -43,13 +43,13 @@ Si vous souhaitez supprimer un autres caractères que les espaces :
 ```
 
 Il existe d'autres modificateurs :
-  * valeurs négative : neg
-  * valeurs absolue : abs
+  * valeur négative : neg
+  * valeur absolue : abs
   * reste de la division euclidienne : modulo
 
 ### Opération sur les chaînes
 
-Ce modificateur replace le mot "love" par un "♥" :
+Ce modificateur remplace le mot "love" par un "♥" :
 ```
 <advancedimporter>
     <product external-reference="demo-1">
@@ -77,6 +77,6 @@ Attention, les paramètres ne peuvent pas être entourés d'espaces. Cet exemple
 
 Si vous souhaitez créer votre propre modificateur, vous devez créer une classe helper dans le dossier modules/advancedimporter/classes/helper.
 
-Ne modifiez pas les helpers existant ! Les mises à jour du module écraseront vos modifications.
+Ne modifiez pas les helpers existants : les mises à jour du module écraseront vos modifications.
 
-Le nom de la classe de l'helper doit être en camelcase et débuter par Helper. Le nom du fichier doit être le nom de la classe sans le helper initial. Il doit être en minuscules.
+Le nom de la classe de l'helper doit être en camelcase et débuter par Helper. Le nom du fichier doit être le nom de la classe sans le helper initial. Il doit être en minuscule.
