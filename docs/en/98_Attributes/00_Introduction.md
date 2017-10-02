@@ -1,0 +1,1 @@
+﻿In this section you will find the list of attributes available for each of the existing entities. 
