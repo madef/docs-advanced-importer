@@ -42,7 +42,7 @@ Files are converted as the feed is downloaded. This is done through a “**model
 
 ## ETL
 
-If you understand how ETL works, the module is strongly inspired by these processes. A model is in fact the “**extractor**”. Its purpose is to convert the feed into “**blocks**”. The **blocks** are **transformed** into a PrestaShop entity and **stored** in a database. 
+If you understand how ETL works, the module is strongly inspired by these processes. A model is in fact the “**extractor**”. Its purpose is to convert the feed into “**blocks**”. The **blocks** are **transformed** into a PrestaShop entity and **loaded** in a database. 
 
 ## Documentation layout
 
