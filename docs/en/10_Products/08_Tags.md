@@ -8,7 +8,8 @@
 </advancedimporter>
 ```
 
-Using a numerical identifier for a language is not ideal, the language’s ISO code can be used directly: ```
+Using a numerical identifier for a language is not ideal, the language’s ISO code can be used directly:
+```
 <advancedimporter>
     <tag supplier-reference="test">
         <name>test</name>
