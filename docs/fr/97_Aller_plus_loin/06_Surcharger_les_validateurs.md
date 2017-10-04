@@ -19,6 +19,15 @@ Il est aussi possible de supprimer complètement le validateur en ne mettant pas
 </advancedimporter>
 ```
 
+Si la validation ne passe pas à cause de la longueur de la chaîne, il est possible de la tronquer au moyen d'un modificateur. Le validateur n'est pas responsable de cette erreur :
+```
+<advancedimporter>
+  <product suppier-reference="demo">
+    <name modifier="HelperString::truncate(32)">Really long name test test test test test test test test test test test</name>
+  </product>
+</advancedimporter>
+```
+
 Attention, si un champ est présent plusieurs fois (comme c'est le cas pour les champs multilangues), il n'est possible que de définir un seul nouveau validatateur pour tous ces champs. Les exemples suivants ont le même résultat :
 ```
 <advancedimporter>

@@ -60,6 +60,15 @@ Ce modificateur remplace le mot "love" par un "♥" :
 </advancedimporter>
 ```
 
+Ce modificateur tronque les chaînes trop longues :
+```
+<advancedimporter>
+  <product suppier-reference="demo">
+    <name modifier="HelperString::truncate(32)">Really long name test test test test test test test test test test test</name>
+  </product>
+</advancedimporter>
+```
+
 ## Mise en garde
 
 Attention, les paramètres ne peuvent pas être entourés d'espaces. Cet exemple ne fonctionne pas :
