@@ -1,4 +1,4 @@
-La création de client s'effectue au moyen de la balise customer. Voici un exemple de création de client :
+La création de clients s'effectue au moyen de la balise customer. Voici un exemple de création d'un compte client :
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -13,9 +13,9 @@ La création de client s'effectue au moyen de la balise customer. Voici un exemp
 </advancedimporter>
 ```
 
-Comme vous pouvez le voir le mot de passe doit être encodé selon la méthode de PrestaShop (Tools::encrypt).
+Le mot de passe doit être encodé selon la méthode de PrestaShop (Tools::encrypt).
 
-Il est possible de donner les mot de passe en clair :
+Il est possible de soumettre le mot de passe en clair à l'aide d'un modifieur :
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <advancedimporter>
