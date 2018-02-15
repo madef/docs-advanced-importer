@@ -98,7 +98,7 @@ Enfin il est possible de définir quelle image utiliser comme couverture :
 </advancedimporter>
 ```
 
-## Optimisation
+## Optimisations
 
 Le téléchargement des images peut être long et est souvent la cause de lenteur d'importation. Afin d'éviter de télécharger des images déjà présentes, il est recommandé d'utiliser l'attribut « mode » avec pour valeur « create ». Ainsi, seules les images déjà non existantes (url inconnnue) seront téléchargées.
 
@@ -114,6 +114,22 @@ Le téléchargement des images peut être long et est souvent la cause de lenteu
         <image mode="create">
             <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-2.jpg</url>
             <legend>My image 2</legend>
+        </image>
+    </product>
+</advancedimporter>
+```
+
+## Images absentes
+
+Si une image est absente, alors l'import du produit sera stoppé. Pour evité de stopper le processus, il est possible de rajouter un attribut :
+```
+<advancedimporter>
+    <product supplier-reference="test" remove-missing-images="yes">
+        <name>test</name>
+        <price>10</price>
+        <image ignore-not-found="yes">
+            <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+            <legend>My image 1</legend>
         </image>
     </product>
 </advancedimporter>

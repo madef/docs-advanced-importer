@@ -118,3 +118,19 @@ Downloading images can take time and is often the reason for slow imports. To av
     </product>
 </advancedimporter>
 ```
+
+## Missing pictures
+
+If an image is missing, the import process of the product is stopped. To avoid that, it's possible to add the attribute « ignore-not-found »:
+```
+<advancedimporter>
+    <product supplier-reference="test" remove-missing-images="yes">
+        <name>test</name>
+        <price>10</price>
+        <image ignore-not-found="yes">
+            <url>http://v2.prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+            <legend>My image 1</legend>
+        </image>
+    </product>
+</advancedimporter>
+```
