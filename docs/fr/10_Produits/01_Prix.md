@@ -66,3 +66,29 @@ De la même manière que pour le prix, le prix unitaire est considéré hors tax
     </product>
 </advancedimporter>
 ```
+Pour intégrer un prix barré, on procédera de la manière suivante :
+
+```
+<?xml version="1.0"?>
+<advancedimporter>
+    <product supplier-reference="demo">
+        <name>Test Specific price</name>
+        <price>100</price>
+        <specificPrice supplier-reference="demo-price-customer-1">
+            <id_product supplier-reference="product">demo</id_product>
+            <id_group>0</id_group>
+            <id_customer>1</id_customer>
+            <price>-1</price>
+            <reduction>0.2</reduction>
+            <reduction_type>percentage</reduction_type> <!-- or amount -->
+            <from_quantity>1</from_quantity>
+            <id_customer>0</id_customer>
+            <id_shop>0</id_shop>
+            <id_country>0</id_country>
+            <id_currency>0</id_currency>
+            <from>0000-00-00</from>
+            <to>0000-00-00</to>
+        </specificPrice>
+    </product>
+</advancedimporter>
+```
