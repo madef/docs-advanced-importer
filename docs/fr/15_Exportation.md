@@ -7,7 +7,7 @@ Plusieurs stratégies d'exportation existent :
 - complète : l'intégralité du catalogue ou des commandes
 - partielle : l'ensemble des entités modifiées ou créées depuis le dernier export (cette option n'est pas encore possible)
 
-Ces stratégies permettent d'exporter soit le catelogue complet, soit les différences de stocks, soit les nouvelles commandes ou encore les changement des statuts des commandes.
+Ces stratégies permettent d'exporter soit le catalogue complet, soit les différences de stocks, soit les nouvelles commandes ou encore les changement des statuts des commandes.
 
 ## Format des flux exportés
 
@@ -20,7 +20,7 @@ Lorsque les entités ont une référence fournisseur, le module utilise ces dern
 
 ## Sécurité
 
-Les fichiers exports sont protégés par un token unique paour chacun des fichiers.
+Les fichiers exports sont protégés par un token unique pour chacun des fichiers.
 
 
 ## Premier export
@@ -30,13 +30,13 @@ Ici dans la liste des options possible (en haut à droite) choisissez l'icone «
 
 ![Icône de l'exporteur](media/exporter-icon.png)
 
-Vous arriverez sur le formulaire suivant :
+Vous arrivz sur le formulaire suivant :
 
-![Formualire de l'exporteur](media/exporter-form.png)
+![Formulaire de l'exporteur](media/exporter-form.png)
 
 Remplissez les différentes options et enregistrez le formulaire. Un message de confirmation sera affiché avec l'url du flux.
 
-![Formualire de l'exporteur](media/exporter-confirm.png)
+![Formulaire de l'exporteur](media/exporter-confirm.png)
 
 
 Attention, le flux ne sera pas disponible immédiatement. L'url devrait vous rediriger sur une une erreur 404. Il faut dans un premier temps exécuter la tâche et attendre que le flux soit généré.
