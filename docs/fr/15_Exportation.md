@@ -34,7 +34,7 @@ Vous arriverez sur le formulaire suivant :
 
 ![Formualire de l'exporteur](media/exporter-form.png)
 
-Remplissez les différentes options et enregistré le formulaire. Un message de confirmation sera affiché avec l'url du flux.
+Remplissez les différentes options et enregistrez le formulaire. Un message de confirmation sera affiché avec l'url du flux.
 
 ![Formualire de l'exporteur](media/exporter-confirm.png)
 
