@@ -16,7 +16,7 @@ S'il s'agit d'un flux produit alors il est possible d'utiliser l'assistant de cr
 
 ## Créer un modèle avec l'assistant
 
-Cliquez sur l'entrée "template" dans le menu du module. Ouvrez l'interface de l'assistant en cliquant du le bouton "?" and haut à droite.
+Cliquez sur l'entrée "template" dans le menu du module. Ouvrez l'interface de l'assistant en cliquant du le bouton "?" en haut à droite.
 La première étape vous invite à importer votre flux. De préférence, choisissez un flux plus petit ne contenant que peu de données. Plus le fichier sera petit, plus l'assistant sera rapide.
 
 Ensuite, il vous sera demandé de nommer le modèle. Si votre fichier est un XML, alors il vous sera demandé d'identifier la racine de chaque produit.
