@@ -16,7 +16,7 @@ If the feed is a product feed, the model creation wizard can be used. This allow
 
 ## Creating a model using the wizard
 
-Click on the "model" entry in the module menu. Open the wizard interface by clicking on the "?" and top right.
+Click on the "model" entry in the module menu. Open the wizard interface by clicking on the "?" on top right.
 The first step invites you to import the flow. If possible, choose a feed that contains as little data as possible. The smaller the file, the faster the wizard will run. 
 
 It will then ask you to name the model. If your file is an XML, you will then be asked to identify the root of each product. 
