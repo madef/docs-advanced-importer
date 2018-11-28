@@ -5,21 +5,21 @@ Depending on the feed format to be imported, additional steps may be required. F
 | Feed format   | Native XML | XML | CSV | Excel |
 |------------------|-----------|-----|-----|-------|
 | Convert to CSV | No       | No | No | Yes   |
-| Create a model| No       | Yes | Yes | Yes   |
+| Create a template| No       | Yes | Yes | Yes   |
 
 
-Generally, the first step is to create a model. If your feed is a CSV, or an XML from a service provider, you will need to create a model.
+Generally, the first step is to create a template. If your feed is a CSV, or an XML from a service provider, you will need to create a template.
 
-The model will allow an XML or CSV to be converted to an XML that can be processed by the module (the native format).
+The template will allow an XML or CSV to be converted to an XML that can be processed by the module (the native format).
 
-If the feed is a product feed, the model creation wizard can be used. This allows models to be created through a graphic interface with no knowledge of XML and XSLT required.
+If the feed is a product feed, the template creation wizard can be used. This allows templates to be created through a graphic interface with no knowledge of XML and XSLT required.
 
-## Creating a model using the wizard
+## Creating a template using the wizard
 
 Click on the "template" entry in the module menu. Open the wizard interface by clicking on the "?" on top right.
 The first step invites you to import the flow. If possible, choose a feed that contains as little data as possible. The smaller the file, the faster the wizard will run. 
 
-It will then ask you to name the model. If your file is an XML, you will then be asked to identify the root of each product. 
+It will then ask you to name the template. If your file is an XML, you will then be asked to identify the root of each product. 
 
 Several further steps will then follow. Each step will ask you to define which node )for an XML) or which column (for a CSV) corresponds to the requested information:
 - Product identifier
@@ -31,9 +31,9 @@ Several further steps will then follow. Each step will ask you to define which n
 - Specifications
 - Supplier and manufacturer
 
-## Creating a model
+## Creating a template
 
-To create a model without using the wizard, access the “Model” tab and click the “Add” button. 
+To create a template without using the wizard, access the “Template” tab and click the “Add” button. 
 
 ## Creating a PHP class for a model
 
@@ -41,7 +41,7 @@ If your feed refers to an external API, if the feed is in a flat or proprietary 
 
 ## Importing a feed manually
 
-Start by clicking on the “Add” button in the “Feed” section of the “Advanced Importer” submenu. First, choose the feed to be imported. Then choose the model to apply. If the feed is in the native format, choose the “None” option. After this, access the “Feed” section in the “Advanced Importer” submenu to monitor the progress of the feed integration. 
+Start by clicking on the “Add” button in the “Feed” section of the “Advanced Importer” submenu. First, choose the feed to be imported. Then choose the template to apply. If the feed is in the native format, choose the “None” option. After this, access the “Feed” section in the “Advanced Importer” submenu to monitor the progress of the feed integration. 
 
 ## Importing a feed automatically
 
