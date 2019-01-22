@@ -42,6 +42,18 @@ Like the price, the purchase price is considered to exclude tax. If it includes 
 </advancedimporter>
 ```
 
+If you use ecotax, you will need to define it as a tax field:
+```
+<advancedimporter>
+    <product supplier-reference="test">
+        <name>test</name>
+        <price tax-"include" custom-tax-fields="ecotax">10</price>
+        <ecotax>1.2</ecotax>
+        <wholesale_price>3.45</wholesale_price>
+    </product>
+</advancedimporter>
+```
+
 If you wish to display the product unit price (e.g. price per kg), you can define the unit price. Here is an example where a 10kg product is sold at 1 euro per kilogram:
 ```
 <advancedimporter>
