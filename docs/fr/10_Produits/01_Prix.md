@@ -66,6 +66,19 @@ De la même manière que pour le prix, le prix unitaire est considéré hors tax
     </product>
 </advancedimporter>
 ```
+
+Si le produit à une ecotax, il faut alors la définir comme un champ de tax:
+```
+<advancedimporter>
+    <product supplier-reference="test">
+        <name>test</name>
+        <price tax-"include" custom-tax-fields="ecotax">10</price>
+        <ecotax>1.2</ecotax>
+        <wholesale_price>3.45</wholesale_price>
+    </product>
+</advancedimporter>
+```
+
 Pour intégrer un prix barré, on procédera de la manière suivante :
 
 ```
