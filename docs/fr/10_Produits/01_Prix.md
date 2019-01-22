@@ -67,7 +67,7 @@ De la même manière que pour le prix, le prix unitaire est considéré hors tax
 </advancedimporter>
 ```
 
-Si le produit à une ecotax, il faut alors la définir comme un champ de tax:
+Si le produit possède une taxe écologique (ecotax), il faut alors la définir comme un champ de taxe:
 ```
 <advancedimporter>
     <product supplier-reference="test">
