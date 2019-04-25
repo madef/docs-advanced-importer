@@ -62,3 +62,36 @@ L'inverse est aussi possible :
 </advancedimporter>
 ```
 
+
+Vous pouve aussi souhaiter de ne pas ajouter/modifier une entité en fonction de si l'entité parente existe ou non.
+
+Dans cet exemple, l'image n'est pas ajoutée ou modifiée si le produit existe :
+
+```
+<advancedimporter>
+    <product supplier-reference="demo-2">
+        <name>Name</name>
+        <price>10</price>
+        <image mode="createparent">
+            <url>http://prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+            <legend>My image</legend>
+        </image>
+    </product>
+</advancedimporter>
+```
+
+Dans cet exemple, l'image est ajoutée ou modifiée seulement si le produit existe :
+
+```
+<advancedimporter>
+    <product supplier-reference="demo-3">
+        <name>Name</name>
+        <price>10</price>
+        <image mode="updateparent">
+            <url>http://prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+            <legend>My image</legend>
+        </image>
+    </product>
+</advancedimporter>
+```
+
