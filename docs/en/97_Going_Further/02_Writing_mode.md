@@ -1,4 +1,4 @@
-﻿For various reasons, you may wish to avoid modifying an existing product. In this case, you need to place the “mode” field into the entity’s root tag. This field may take the following values: 
+For various reasons, you may wish to avoid modifying an existing product. In this case, you need to place the “mode” field into the entity’s root tag. This field may take the following values: 
 - create: to only create
 - update: to only update
 - both: to create and modify 
@@ -62,3 +62,34 @@ The opposite is also possible:
 </advancedimporter>
 ```
 
+You can also want to create/modify a child entity if the main entity is on creation or on updating.
+
+In this example, the image is not added or update if product exists:
+
+```
+<advancedimporter>
+    <product supplier-reference="demo-2">
+        <name>Name</name>
+        <price>10</price>
+        <image mode="createparent">
+            <url>http://prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+            <legend>My image</legend>
+        </image>
+    </product>
+</advancedimporter>
+```
+
+In this example, the image is added/updated only if the product exists :
+
+```
+<advancedimporter>
+    <product supplier-reference="demo-3">
+        <name>Name</name>
+        <price>10</price>
+        <image mode="updateparent">
+            <url>http://prestashopxmlimporter.madef.fr/fr/numbers/number-1.jpg</url>
+            <legend>My image</legend>
+        </image>
+    </product>
+</advancedimporter>
+```
