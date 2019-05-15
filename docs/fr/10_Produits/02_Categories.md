@@ -205,3 +205,17 @@ Si vous ne souhaitez que garder les liens du dernier flux, utilisez l'attribut Â
     </product>
 </advancedimporter>
 ```
+
+### Groupes
+
+Pour associer des groupes particuliers :
+
+```
+<advancedimporter>
+    <category supplier-reference="test" remove-missing-groups="true">
+        <name>test</name>
+        <categoryGroup><id_group>1</id_group></categoryGroup>
+        <categoryGroup><id_group>3</id_group></categoryGroup>
+    </category>
+</advancedimporter>
+```
