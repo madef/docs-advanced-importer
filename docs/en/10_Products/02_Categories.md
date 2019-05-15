@@ -204,3 +204,17 @@ If you only want to keep the links from the last feed, use the attribute “remo
     </product>
 </advancedimporter>
 ```
+
+### Attached groups
+
+To attached groups :
+
+```
+<advancedimporter>
+    <category supplier-reference="test" remove-missing-groups="true">
+        <name>test</name>
+        <categoryGroup><id_group>1</id_group></categoryGroup>
+        <categoryGroup><id_group>3</id_group></categoryGroup>
+    </category>
+</advancedimporter>
+```
