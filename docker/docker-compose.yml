@@ -1,0 +1,22 @@
+version: '3'
+services:
+  prestashopxmlimporter-deflotte-apache:
+    container_name: prestashopxmlimporter-deflotte-apache
+    restart: always
+    image: lavoweb/php-7.3
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.prestashopxmlimporter-deflotte-apache-http.rule: "Host(`prestashopxmlimporter.deflotte.fr`)"
+      traefik.http.routers.prestashopxmlimporter-deflotte-apache-http.entrypoints: "http"
+      traefik.http.routers.prestashopxmlimporter-deflotte-apache-https.rule: "Host(`prestashopxmlimporter.deflotte.fr`)"
+      traefik.http.routers.prestashopxmlimporter-deflotte-apache-https.entrypoints: "https"
+      traefik.http.routers.prestashopxmlimporter-deflotte-apache-https.tls: "true"
+      traefik.http.routers.prestashopxmlimporter-deflotte-apache-https.tls.certresolver: "test-deflotte"
+    networks:
+      - 'web'
+    volumes:
+      - ../compiled:/var/www/html
+      - ../source:/var/www/source
+networks:
+  web:
+    external: true
