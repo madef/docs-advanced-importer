@@ -6,9 +6,9 @@ services:
     image: lavoweb/php-7.3
     labels:
       traefik.enable: "true"
-      traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-http.rule: "Host(`v1-prestashopxmlimporter.deflotte.fr`)"
+      traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-http.rule: "Host(`v1.prestashopxmlimporter.deflotte.fr`)"
       traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-http.entrypoints: "http"
-      traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-https.rule: "Host(`v1-prestashopxmlimporter.deflotte.fr`)"
+      traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-https.rule: "Host(`v1.prestashopxmlimporter.deflotte.fr`)"
       traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-https.entrypoints: "https"
       traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-https.tls: "true"
       traefik.http.routers.v1-prestashopxmlimporter-deflotte-apache-https.tls.certresolver: "test-deflotte"
